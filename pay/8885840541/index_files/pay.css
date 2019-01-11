@@ -1,0 +1,30 @@
+﻿.main{background:none;overflow: hidden;}
+.pay_main_cont{width: 930px;margin: 0 auto;}
+.allinpay { padding:30px ;width:850px; margin: 0 auto;background-color: #f4f4f4;color: #000}
+.allinpay h2{ font-size:25px;color: #3e0176}
+.allinpay hr{ border:none;border-bottom:1px solid #ccc;margin:15px 0; }
+.paywy{margin:20px 0 20px 15px;}
+.allinpayAdd {width: 330px; margin-bottom:20px;font-size: 13px}
+.allinpayAdd p { margin-bottom:8px; overflow:hidden; zoom:1; }
+.allinpayAdd p em { color:#F00; margin-top:5px; }
+.allinpayAdd p span { float:left; width:80px; display:block; line-height:28px; }
+.allinpayAdd p input { width:220px; height:20px; line-height:20px; border:1px solid #ccc; background-color:#fcfcfc; padding:3px 5px; }
+.bankList { overflow:hidden; zoom:1; margin:0 15px 30px; }
+.bankList * { float:left; vertical-align:middle; display:inline; }
+.bankList label { display:block; margin:0 20px 7px 0; cursor:pointer; _cursor:default; }
+.bankList img { border:1px dashed #eee; }
+.bankList input { margin:13px 5px 0 0; *margin-top:9px; }
+.bankList label:hover img { opacity:.8; filter:alpha(opacity:80); border-color:#ccc; }
+.pay_style{width: 330px;margin:20px 0;}
+.allinpayBtn {}
+.paycontent{width: 1000px;margin: 0 auto;background-color: #fff;padding: 20px 0}
+.juzh{width: 1000px;margin: 0 auto;margin-top: 20px;}
+.articleContent{border:1px solid #ccc;padding: 10px; margin-top: 20px;}
+
+.about_baifuni {
+text-align: left;
+color: #AE62DB;
+background: url(../images/order/common_bg.jpg) center top repeat-y;
+padding: 50px;
+line-height: 22px;
+}

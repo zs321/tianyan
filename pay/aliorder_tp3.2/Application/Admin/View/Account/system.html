@@ -1,0 +1,40 @@
+<link href="__CSS__/magic-check.min.css" rel="stylesheet">
+<div id="page-content">
+    <div class="row">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">系统密钥设置</h3>
+            </div>
+            <form class="panel-body form-horizontal form-padding" method="post" action="{:U('Account/systemHandle')}<notempty name='re'>?id={$re.id}</notempty>" onsubmit="return check()">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">系统密钥</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" name="api_key" value="{$re.api_key}" id="api_key">
+                    </div>
+                    <div class="col-md-5">
+                        
+                        <label class="col-md-8 control-label" style="text-align: left;">备注：与客户端交互唯一标识</label>
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="form-group text-center">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-block btn-primary">点击提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function check() {
+        var api_key = $('#api_key').val();
+        if (api_key == null || $.trim(api_key)=='') {
+            alert('请输入系统密钥');
+            return false;
+        }
+        return true;
+    }
+</script>

@@ -1,0 +1,43 @@
+<?php require_once 'header.php' ?>
+<section class="page-bg">
+    <div class="container about">
+        <div class="page-bg-text">
+            <h1>
+                公司介绍
+                <p>
+                    一个账号集合多种付款方式
+                </p>
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 left">
+                <?php require_once'page_nav.php' ?>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9 right">
+                <div class="main-content">
+                    <h3>
+                        关于<?php echo $this->config['sitename']?>
+                    </h3>
+                    <p>
+                        <?php echo $this->config['sitename']?>是国内首批提供<B>一站式解决在线支付接口</B>方案的云服务平台。主要服务于互联网和移动互联网领域，涉及阅读、超市、酒店、便利店、游戏、交友、电商、医院、旅游、餐饮、O2O等行业领域为移动应用提供综合支付营销服务。面向消费者，我们旨在提供最简单、最快捷的支付体验，面向页开发者与平台运营商，我们提供最专业、最全面的一站式收费及运营支撑解决方案，帮助开发者在任何时候、任何地方、任何场景都能收到钱。
+                    </p>
+                    <p>
+                        <?php echo $this->config['sitename']?>成立于2016年1月，公司注册资金500万元人民币，目前已推出PC网站、WAP移动网页，Android、IOS等应用计费SDK，为近十万家应用开发者提供云通付服务。
+                    </p>
+                    <p>
+                        截至今日，
+                        <?php echo $this->config['sitename']?>已与中国移动、中国联通、中国电信、支付宝、财付通、微信支付， 腾讯、骏网、盛大、宝付、易宝等多家老牌支付及游戏企业建立了战略合作伙伴关系， 并赢得了伙伴的高度认同。
+                            <?php echo $this->config['sitename']?>目前主要服务于互联网和移动互联网领域，为网页游戏、手机游戏、阅读、音乐、视频、交友、教育等移动应用提供综合计费营销服务。
+                                运营上提供一个安全、稳定、快捷、便利的多渠道计费平台。 如果您是优质的游戏运营商， 电子商务运营商，我们将以最竭诚的态度。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php require_once 'footer.php' ?>

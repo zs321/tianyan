@@ -1,0 +1,12 @@
+
+2018-05-17 16:46:54  回调信息：<?xml version="1.0" encoding="UTF-8" standalone="yes"?><xml><retcode>0</retcode><retmsg>操作成功</retmsg><spid>1526431974967</spid><spbillno>2018051716355775250</spbillno><transaction_id>180517152654615830836</transaction_id><tran_amt>200</tran_amt><result>1</result><sign>1A4E78745303C11CA53E265A9CD838CB</sign></xml> 
+
+2018-05-17 16:47:57  回调信息： 
+
+2018-05-17 16:48:14  回调信息：Array 
+
+2018-05-17 16:48:34  回调信息：{"retcode":"0","retmsg":"\u64cd\u4f5c\u6210\u529f","spid":"1526431974967","spbillno":"2018051716355775250","transaction_id":"180517152654615830836","tran_amt":"200","result":"1","sign":"1A4E78745303C11CA53E265A9CD838CB"} 
+
+2018-05-17 16:48:58  回调信息：{"retcode":"0","retmsg":"\u64cd\u4f5c\u6210\u529f","spid":"1526431974967","spbillno":"2018051716355775250","transaction_id":"180517152654615830836","tran_amt":"200","result":"1","sign":"1A4E78745303C11CA53E265A9CD838CB"} 
+
+2018-05-17 16:50:04  回调信息：{"retcode":"0","retmsg":"\u64cd\u4f5c\u6210\u529f","spid":"1526431974967","spbillno":"2018051716492421774","transaction_id":"180517152654696492178","out_transaction_id":"QR180517164925GKC","tran_amt":"200","result":"1","sign":"09AABB85C90ED343139DA6A0458CF577"} 

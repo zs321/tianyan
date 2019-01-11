@@ -1,0 +1,648 @@
+﻿================参数发送===================
+mcht_no：1000000000004；total_fee：100；body：testshop；trade_no：1517207154；notify_url：http://localhost/NotifyUrl；mch_create_ip：::1；nonce_str：1517193542；sign：4E6FA65017A2A4DEBF328E75CC1923E5；
+================结果接收===================
+status：0；statusMessage：成功；resultCode：000000；resultMsg：交易成功；sysNo：1517207154；qrCode：weixin://wxpay/bizpayurl?pr=i9FtjNp；sign：BC616C5826C1F95AB34390EEBFDCCF36；
+================149 getWxQrOrder 参数发送 ===================
+mcht_no：1000000000004；total_fee：100；body：testshop；trade_no：1517203100；notify_url：http://localhost/NotifyUrl；mch_create_ip：::1；nonce_str：1517193648；sign：AD469B95137137C2A0F1ED21A022197E；
+================152 getWxQrOrder 结果接收===================
+status：0；statusMessage：成功；resultCode：000000；resultMsg：交易成功；sysNo：1517203100；qrCode：weixin://wxpay/bizpayurl?pr=pnm1qT8；sign：665E832E4D29489882170B559CAE59A0；
+================65 kjBindCard 参数发送===================
+sp_id：1000；mch_id：100000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521875659；sign：630D296C0A16F6B3377E2E60EA10A2FF；
+================68 kjBindCard 结果接收===================
+message：商户不存在；status：FAIL；
+================65 kjBindCard 参数发送===================
+sp_id：1000；mch_id：100000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521875686；sign：F205950FB8A7290EFC8B2851D09603F7；
+================68 kjBindCard 结果接收===================
+message：商户不存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1000；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876003；sign：28ACF73D69731A08A98AE5BF23A873D7；
+================65 kjBindCard 结果接收===================
+message：验签失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1000；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876263；sign：B37E795A4C41A258C1E880F7EA80F344；
+================65 kjBindCard 结果接收===================
+message：验签失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1000；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876266；sign：3F8816ADBC20C42051306352D50E69EC；
+================65 kjBindCard 结果接收===================
+message：验签失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1000；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876283；sign：BA300A4E9E40709B53BBAE8CC6F5762D；
+================65 kjBindCard 结果接收===================
+message：验签失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1000；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876287；sign：F07F270AB789C8601F023087C0D44187；
+================65 kjBindCard 结果接收===================
+message：验签失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876515；sign：7600300D8262873DDAC291C1563D197E；
+================65 kjBindCard 结果接收===================
+message：卡片绑定成功；status：SUCCESS；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876588；sign：72E2442FC724AA1A334C1BFA995A3D18；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876591；sign：7FDE23355BF0DA6C6D0C5647A7C69E43；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876631；sign：7A9BF59F055AB645E03B3023F7235599；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876651；sign：93F79D3CAB1C918C1903C8E65A893553；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：某某；acc_no：62284800000000000；mobile：1870000000；id_no：3212000000000000；expire_date：；cvv：；nonce_str：1521876669；sign：BD73BA0D6B455ADC211F78F28E2FA75F；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521898805；sign：4A8E6891E2684EF7B9756A65141D4BFD；
+================65 kjBindCard 结果接收===================
+message：卡片绑定成功；status：SUCCESS；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899000；sign：182D2CA2531C3533CC0C3F2BC3D736B0；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899060；sign：245709A8FC06F6DBD235F8E271686B48；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================99 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899060；sign：DFF23193D4FB345F9B49F47223BDD310；out_trade_no：101；total_fee：1；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================102 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899089；sign：7D8B7A829F30209CC4B4601874EA9B11；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================99 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899089；sign：0CB9809F4B93671021240AE3E247FBEE；out_trade_no：101；total_fee：1；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================102 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899095；sign：74FF7631DBD128BBDA8D42CC8C9FC75F；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================99 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899095；sign：C52F820B4EC404CA3A2F5261847E29F7；out_trade_no：101；total_fee：1；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================102 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899114；sign：12C7D36429111BD049E2F7FC851F1B03；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================99 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name： 王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899114；sign：6680EE40290EF7EBEF96B4304AB82BC6；out_trade_no：101；total_fee：10；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================102 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899131；sign：2370707BC8EA6D259C6C9A068BCA6AEA；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================99 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899131；sign：DB09612B94A8F565A6683C26FF9EBB9B；out_trade_no：101；total_fee：10；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================102 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899155；sign：F0D37BAC942BA969D2ABC9678A76F116；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899155；sign：D9A2A96F668CC6328F3CE19FDFF51734；out_trade_no：101；total_fee：10；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：单笔订单金额不能小于1.00元；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899192；sign：68ACFBC5F33BFC327995008BDF7B59F1；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899192；sign：F24FA469FB8D929A891E20B605926BF0；out_trade_no：101；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：87222BE16471F758541639B04DA35CBA；result_code：SUCCESS；trade_no：1010KJ201803242146320030；nonce_str：52ea16c8-d655-433b-bb88-a140e04160d2；out_trade_no：101；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899472；sign：CD7D7C6ACF6FA9D2332D79FCBDEF0BB9；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899473；sign：37B4BA0C84D9A566D2FB82AFAD865370；out_trade_no：101；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899480；sign：4CA06065CA72A309A871FB40A693C2C4；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899480；sign：0A560C0EFF02591A570BB2B5F2A24BB9；out_trade_no：102；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：95EDD2D58F21B8823A030519AB74A8C7；result_code：SUCCESS；trade_no：1010KJ201803242151200032；nonce_str：ea177b45-1b45-4b7f-a0cb-7b82e90a5e58；out_trade_no：102；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899540；sign：431BA3580E70F1EB22276DF8BC64A269；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899540；sign：7C02AFA6C62D8BEB228D4785F38934DE；out_trade_no：102；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899547；sign：04155CABBE161AAD8DDB1618E1B7DD19；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899547；sign：2456C2BB1A3540D8F5FAB512F4E682C0；out_trade_no：103；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：0C6683125F9D176E9F524F832E2EC4F1；result_code：SUCCESS；trade_no：1010KJ201803242152280034；nonce_str：27405f19-0b45-4c2f-91e2-ac9fad3fdaba；out_trade_no：103；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：；mobile：；id_no：；expire_date：；cvv：；nonce_str：1521899586；sign：46F2E34E3640BD83B1B4FDAE9172F18F；
+================65 kjBindCard 结果接收===================
+resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899603；sign：3B652C25CADF3C8E2EEFC18D6BB7AEEA；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899603；sign：7C89069CBED8D70ACA3A31981BF05E60；out_trade_no：104；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：207175渠道快捷签约支付短信发送失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899629；sign：322698080254D66F5242DE2B65812A9C；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899629；sign：C804E30C6C73B7FFBA545F2B86B41AFD；out_trade_no：105；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：FD32CAD1027597D403AF03188A7837FB；result_code：SUCCESS；trade_no：1010KJ201803242153490036；nonce_str：1bd8afe4-dcbc-4305-804c-2ad331196f99；out_trade_no：105；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：；mobile：；id_no：；expire_date：；cvv：；nonce_str：1521899664；sign：D4122738EDC9D312EBF4E4B802EC957F；
+================65 kjBindCard 结果接收===================
+resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：；mobile：；id_no：；expire_date：；cvv：；nonce_str：1521899697；sign：9A99ED199339438CBC6B97E6485ED51D；
+================65 kjBindCard 结果接收===================
+resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899705；sign：1C25A3DC215442A6E408503849B9ABCE；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================102 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521899705；sign：14264A0F6045E0693AF406CC3632B4C4；out_trade_no：106；total_fee：1000；body：快捷支付；notify_url：http://localhost/kjNotifyUrl；
+================105 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：B6BA6D7B7D2D2F2EA23DBCF12B662C66；result_code：SUCCESS；trade_no：1010KJ201803242155050037；nonce_str：b0f72f93-4bc1-4863-836e-4d60c1ba6c3d；out_trade_no：106；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王小二；acc_no：6013826992009093821；mobile：15588808858；id_no：230321199004025212；expire_date：；cvv：；nonce_str：1521956257；sign：E536F04C8C48D3E22383EE9716A27396；
+================65 kjBindCard 结果接收===================
+
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王小二；acc_no：6013826992009093821；mobile：15588808858；id_no：230321199004025212；expire_date：；cvv：；nonce_str：1521956258；sign：9B2EB80E5C2B1E8A22628DD810DEE9CC；
+================65 kjBindCard 结果接收===================
+
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521956306；sign：560F53C7F687B5E186C303CB1D5C9701；
+================65 kjBindCard 结果接收===================
+
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521956307；sign：6EF2BC986C7438B00DC7D8687EDB8F8B；
+================65 kjBindCard 结果接收===================
+
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521971986；sign：914E77DB5CE775BD17A176E19B31198A；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521971989；sign：A3A24B8E9B6B55E248A293B860C3B894；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：啥的；acc_no：345645415531；mobile：17162888881；id_no：123456123153；expire_date：；cvv：；nonce_str：1521973321；sign：85ADDC5D4885D19E567477BC14CB3005；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：啥的；acc_no：345645415531；mobile：17162888881；id_no：123456123153；expire_date：；cvv：；nonce_str：1521973323；sign：66363CCF6AED2FD674E3128046244ECF；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521985469；sign：25867C00CCFEDAB0F3AB9731101C5E82；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521985470；sign：00D4F247D766A5C974894D68B8ACE2E0；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521985506；sign：711CBA486F3BEEA70617C416DE77F0D8；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521985506；sign：711CBA486F3BEEA70617C416DE77F0D8；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：阿森纳卡基夫；acc_no：156456123156；mobile：12345623123；id_no：12312245；expire_date：；cvv：；nonce_str：1521987828；sign：AFAF8F6743C4D02393BFBBA30650F433；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：阿森纳卡基夫；acc_no：156456123156；mobile：12345623123；id_no：12312245；expire_date：；cvv：；nonce_str：1521987828；sign：AFAF8F6743C4D02393BFBBA30650F433；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1521987901；sign：24128D0D7AAF9BB8A3E81957CBA82DC6；
+================65 kjBindCard 结果接收===================
+message：卡片绑定成功；status：SUCCESS；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1521987901；sign：C319776F1293070212F7FD4985E90C40；out_trade_no：2018032522233350168；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：交易金额区间是：100 -2000000 之间；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521987992；sign：875ACCE23B26D83CD287B1BC055E07B6；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：王南洋；acc_no：6217231313001329566；mobile：17355067580；id_no：341222199004049290；expire_date：；cvv：；nonce_str：1521987992；sign：3F9D7D1E579D8284503FA39E3D35C0A4；out_trade_no：2018032522261326937；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：交易金额区间是：100 -2000000 之间；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521998040；sign：CE2AB722D24152DC7B3E38FAF2DA87C0；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1521998041；sign：B4BF5635DB82CA3C896F5DF27543811D；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522000103；sign：6D253D6CD38465487DD8E46198B913BD；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522000104；sign：791ABEB6214E7046A2C92F29EAD0004D；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522000118；sign：14BDA38A284AA11C7CB029E76779DA15；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522000785；sign：DED9922C595C72F6AECA25E719442FBC；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522000786；sign：D9D3C4D06FD97702EF9E7B64E990C978；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030345；sign：3E819CF7A86DB76D5F607B57C9E50084；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030346；sign：CDD474E3080EEBB35022BB17ED456060；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：卡片已绑定；status：FAIL；resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030405；sign：A0CAB262A30894A8F83B72ECAA300646；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030405；sign：834D4A40CCF7DD911D761B18E4AF1E82；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：卡片已绑定；status：FAIL；resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030506；sign：2287E92535261D8747DDB4C978563200；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522030506；sign：D49F1DEF444E0D780AA111BBA45BFEAB；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：卡片已绑定；status：FAIL；resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522031275；sign：1AD4D8EE2735FD2B4E4083A9F6EEBCD6；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522031276；sign：22D6D685BDC95C5F3AAD42560150399D；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：卡片已绑定；status：FAIL；resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522032642；sign：DA7890EDDE6D0A644D727904BB8B6AA3；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522032697；sign：EFFF0EDC0E4571EB82F7FEFE509D8E35；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：交易金额区间是：100 -2000000 之间；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522032702；sign：D10328118A15E4C93630D9A1861F9219；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100598；id_no：51032219950124733；expire_date：；cvv：；nonce_str：1522032704；sign：839CC7CC4E1B3A1344BFD1E12D6DF25B；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522032732；sign：375C834215A24FD67163DFC6B8E14994；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522032732；sign：D29D584409709E5EFB53895AFCDB3965；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522032792；sign：A08234A9BC93CE7987B6F30BBF711374；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522032792；sign：B5988BEC658E588487516B118F19CFA1；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522033161；sign：C15360F0093EE4A1871E51FEE740FFDA；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522033161；sign：68A3C14FBE578F753589F5A2B5278865；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522039366；sign：4185AF5DBC25858D79DB21B973990D69；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100595；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522039366；sign：371AC802F5FBF3483D922816E86DD912；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522039578；sign：D5D90239CEF10277CED00CDD861A6D49；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522039580；sign：35F2C55E1FEADE1AF4CFBB21B59F3F5C；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199401247331；expire_date：；cvv：；nonce_str：1522046907；sign：5B5C176898CC1F34E3DB9421CE229CFA；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199401247331；expire_date：；cvv：；nonce_str：1522046908；sign：9449C99B9558CE49B6C7EAA34FEAA4C2；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199401247331；expire_date：；cvv：；nonce_str：1522047350；sign：25C1004DDF298FB6FF1C155CDA690782；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199401247331；expire_date：；cvv：；nonce_str：1522047351；sign：622BCBD2AA82DE85082C08F72FE9F0E8；out_trade_no：2018032610110143382；total_fee：100；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=1.00；
+================107 kjPayOrder 结果接收===================
+message：订单已存在；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522047744；sign：6BBE1FB0D7B61792B2ECD3877F2A2B6B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522047745；sign：F38F258DC9DB98B94E0EEB3F10066FFC；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：343；acc_no：3434；mobile：3434；id_no：3434；expire_date：；cvv：；nonce_str：1522048080；sign：6CA4BD78E26C716E1ECE4CF8C5A2DBB3；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：343；acc_no：3434；mobile：3434；id_no：3434；expire_date：；cvv：；nonce_str：1522048130；sign：64B2BF4DA019197EF55CC09A4FF0D7C6；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049248；sign：2BDD2658F1CC55842C166883486F63F8；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049249；sign：319828601CFC49CA8587F5EF87A178F0；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049249；sign：319828601CFC49CA8587F5EF87A178F0；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049250；sign：FA5284BA74592ABF30F59B625D1CD3B0；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049262；sign：D2F5C9CBA8387CD1F411632C3717D08E；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049262；sign：D2F5C9CBA8387CD1F411632C3717D08E；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049958；sign：7608641980FB45C1506FBDCF259D3C79；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522049960；sign：BDA3FF18D463B211A906DF608CB07B3E；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522050073；sign：7F8107C0BAF217B7B60BE82DDFD152E1；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522050074；sign：D28F635BB44A11FAF572CA94317C8CD1；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522050340；sign：0FB503F0506F15EA672D5D5A53A9A489；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522050340；sign：0FB503F0506F15EA672D5D5A53A9A489；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522068750；sign：3E42A05FE40A0EE55D36AA48832310E0；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522068750；sign：6418105AA3D98646C61414F1B259FF6D；out_trade_no：2018032620515466699；total_fee：20089；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=200.89；
+================107 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：3704C6CE3A8CEE11671149EA095C77BA；result_code：SUCCESS；trade_no：1010KJ201803262052310002；nonce_str：bb36fcb1-3b4b-455e-bd66-47a2cd10b3dc；out_trade_no：2018032620515466699；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079366；sign：45ADD47AD3AF61F75E18815AF5989DD6；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079368；sign：785D4037551114066B21099495A394F4；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079371；sign：7A45B0050CE3C3ABB0204E618C1BE48A；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079443；sign：AFA224CC6197D21DE87C157150370768；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079444；sign：525E5E89511C064E4984A37A245C8012；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079496；sign：2D99E3F848C67FE6BC3F510260167B01；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522079497；sign：624ECB7D2A69D284D664C0BB1971DF15；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080163；sign：AC67973AFE2931805B78B4A8F509A58C；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080163；sign：AC67973AFE2931805B78B4A8F509A58C；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080169；sign：495F93D793F92DE27D35908E1E453E7B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080209；sign：6CEAAD7575AD07A9F3E03F915F2D8927；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080210；sign：00033B387224A2FC508FB58588EFD968；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080777；sign：B15DBFCD460C045BC5F4A16AF735013B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080779；sign：969E3D97A15912429074D00F814C4AEB；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080787；sign：1D79027BCA8794C31E9DCA3E28CBDBE5；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080788；sign：9BCDBD7D5FDAD746E8B716506A365D18；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080791；sign：FE9A216215305009BA67D9E942B4708B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080792；sign：19F22688551421D665DC765D7B38F6C4；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080792；sign：19F22688551421D665DC765D7B38F6C4；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080793；sign：EA33300AB2849F89A6D0A34F57EBFB2B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080793；sign：EA33300AB2849F89A6D0A34F57EBFB2B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080848；sign：DADF2D83C5D695BC2F704901BB2BB696；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080848；sign：DADF2D83C5D695BC2F704901BB2BB696；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080849；sign：FC18C1FA811A00E4F9A3AACE453F3457；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080849；sign：FC18C1FA811A00E4F9A3AACE453F3457；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522080855；sign：B483E7538F66ABC5F562DA171019DF3F；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：；mobile：；id_no：；expire_date：；cvv：；nonce_str：1522082163；sign：D7CB741451B29CB2D257FDE75614CFD0；
+================65 kjBindCard 结果接收===================
+resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：；mobile：；id_no：；expire_date：；cvv：；nonce_str：1522082164；sign：A2602580FEECB9A6B3528F676A96A87A；
+================65 kjBindCard 结果接收===================
+resCode：-5；resMsg：服务器打盹了，请稍后尝试哦；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113388；sign：5D2DBCD8F82EA1ACE9FA29AEE11581AD；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113390；sign：7119972A43EA481D8BDDAC9A59A2A725；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113448；sign：29B11015318776687F8430CA6A1D1DC8；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113868；sign：E67E3A382C77E764F54B74CA160BCAC8；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113869；sign：FD9139041507FA1ED4F268F101717B0D；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：622152320021603878；mobile：17162888881；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113879；sign：E35FEE858A689FB9ADA89C97D01A4BAD；
+================65 kjBindCard 结果接收===================
+message：卡号错误，请效验卡号；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113966；sign：5E7810FC7529E94B2E9ACC9E70CAAA1C；
+================65 kjBindCard 结果接收===================
+message：卡片已绑定；status：FAIL；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：康林；acc_no：6214850286404741；mobile：18200100598；id_no：510322199501247331；expire_date：；cvv：；nonce_str：1522113966；sign：009CBBCA162CE009844AE27D781A9EC1；out_trade_no：2018032709253689368；total_fee：50000；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=500.00；
+================107 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：9109A6C5382F918ACC22874267FD57E0；result_code：SUCCESS；trade_no：1010KJ201803270926060034；nonce_str：97c101b4-8170-4fd3-8fa9-94cb5d435d50；out_trade_no：2018032709253689368；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：伍鼎林；acc_no：6226192007274335；mobile：13430151084；id_no：500227198512287718；expire_date：；cvv：；nonce_str：1522114054；sign：EB87818E76F6B12741F8E4829F7F794B；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持民生银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：伍鼎林；acc_no：6226192007274335；mobile：13430151084；id_no：500227198512287718；expire_date：；cvv：；nonce_str：1522114055；sign：596543FF375255AA0875657732C333F8；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持民生银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：伍鼎林；acc_no：6214850239738542；mobile：13436151084；id_no：500227198512287718；expire_date：；cvv：；nonce_str：1522114177；sign：C7EDBB4D28B9300E4981F2B1FA17AD42；
+================65 kjBindCard 结果接收===================
+message：卡片绑定成功；status：SUCCESS；
+================104 kjPayOrder 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：伍鼎林；acc_no：6214850239738542；mobile：13436151084；id_no：500227198512287718；expire_date：；cvv：；nonce_str：1522114177；sign：1948DA69D5C215A075E29191F6A34F60；out_trade_no：2018032709290293993；total_fee：30000；body：快捷支付；notify_url：http://pay.云付码.com/pay/kjpay_kjpay/notifyUrl.php?amt=300.00；
+================107 kjPayOrder 结果接收===================
+message：下单成功；status：SUCCESS；sign：54E1DFB1751C039AD334BA932D155FFF；result_code：SUCCESS；trade_no：1010KJ201803270929370039；nonce_str：d1da2fc9-db69-4921-b4e8-9932b8f55013；out_trade_no：2018032709290293993；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522171393；sign：0B9259F643B9F388636B10B1F8FF5D91；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：崔哲荣；acc_no：6013826002009093837；mobile：18763115355；id_no：230321199004025312；expire_date：；cvv：；nonce_str：1522171395；sign：4E4C3049B19AD742EE7AE40E8CCBB47A；
+================65 kjBindCard 结果接收===================
+message：该通道暂不支持中国银行卡片的交易；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：111；acc_no：111；mobile：111；id_no：111；expire_date：；cvv：；nonce_str：1523167839；sign：7F7F56FCE4BA61EDEC517238CBC2C15A；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：111；acc_no：111；mobile：111；id_no：111；expire_date：；cvv：；nonce_str：1523167841；sign：F32CDF0B5BC4FA0C9483E72C393A3D4D；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；
+================62 kjBindCard 参数发送===================
+sp_id：1010；mch_id：101000000000000；acc_name：111；acc_no：111；mobile：111；id_no：111；expire_date：；cvv：；nonce_str：1523171637；sign：B8CD1010BAFAB7E86465C213DCF0151A；
+================65 kjBindCard 结果接收===================
+message：查询失败；status：FAIL；

@@ -1,0 +1,213 @@
+<div id="page-content">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">订单列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-12 table-toolbar">
+                        <form action="{:U('Order/index')}" method="get">
+                            <div class="form-group" style="margin-bottom: 10px;">
+                                <label for="dtp_input1" class="control-label">订单日期：</label>
+                                <div class="input-group date form_datetime" data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="dtp_input1">
+                                    <input class="form-control" size="16" type="text" value="{$sday}" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                </div>
+                                <label class="control-label">&nbsp;&nbsp;至&nbsp;&nbsp;</label>
+                                <div class="input-group date form_datetime" data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="dtp_input2" style="margin-right: 10px;">
+                                    <input class="form-control" size="16" type="text" value="{$eday}" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                </div>
+                                <input type="hidden" name="sday" id="dtp_input1" value="{$sday}" />
+                                <input type="hidden" name="eday" id="dtp_input2" value="{$eday}" />
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_input3" class="control-label">订单号：</label>
+                                <input type="text" class="form-control" value="{$orderno}" name="orderno" id="dtp_input3"/>
+                            </div>
+							<div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_input3" class="control-label">支付宝帐号</label>
+                                <input type="text" class="form-control" value="{$orderno}" name="account" id="account"/>
+                            </div>
+                            <br>
+							
+                            <!--<div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select1" class="control-label">支付方式：</label>
+                                <select class="form-control" name="paytype" id="paytype">
+                                    <option value="">选择支付方式</option>
+                                    <option value="1" <if condition="$paytype eq '1'">selected</if>>微信</option>
+                                    <option value="2" <if condition="$paytype eq '2'">selected</if>>支付宝</option>
+                                </select>
+                            </div>
+							
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select1" class="control-label">收款账号：</label>
+                                <select class="form-control" name="account" id="account" >
+                                    <option value="">选择收款账号</option>
+                                    <foreach name='re' item='v'>
+                                        <option value="{$v.account}" <if condition="$v.account eq $account ">selected</if>>{$v.account}</option>
+                                    </foreach>
+                                </select>
+                            </div>-->
+							
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select2" class="control-label">支付状态：</label>
+                                <select class="form-control" name="paystatus" id="dtp_select2">
+                                    <option value="">选择支付状态</option>
+                                    <option value="1" <if condition="$paystatus eq '1'">selected</if>>支付成功</option>
+                                    <option value="0" <if condition="$paystatus eq '0'">selected</if>>待支付</option>
+                                    <option value="-1" <if condition="$paystatus eq '-1'">selected</if>>支付失败</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select3" class="control-label">下发状态：</label>
+                                <select class="form-control" name="noticestatus" id="dtp_select3">
+                                    <option value="">选择下发状态</option>
+                                    <option value="1" <if condition="$noticestatus eq '1'">selected</if>>发送成功</option>
+                                    <option value="0" <if condition="$noticestatus eq '0'">selected</if>>发送失败</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <button class="btn btn-default"><i class="ion-search"></i> 检索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6 table-toolbar-left">
+                        <p class="text-pink">总成功金额：￥ <php>echo number_format($money,2,".",",");</php> 元</p>
+                    </div>
+                    <div class="col-sm-6 table-toolbar-right">
+                    </div>
+                </div>
+            <div class="table-responsive">
+                <table id="demo-foo-row-toggler" class="table table-bordered text-center  toggle-circle">
+                    <thead>
+                    <tr>
+                        <th class="text-center">订单ID</th>
+                        <th class="text-center">订单号</th>
+                        <th class="text-center">支付宝单号</th>
+                        <th class="text-center">订单金额</th>
+                        <th class="text-center">备注</th>
+                        <th class="text-center">收款账号</th>
+                        <th class="text-center">支付方式</th>
+                        <th class="text-center">支付状态</th>
+                        <th class="text-center">下发状态</th>
+                        <th class="text-center">下单时间</th>
+						<th class="text-center">扫码时间</th>
+                        <th class="text-center">支付时间</th>
+                        <th class="text-center">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="lists" item="v">
+                        <tr>
+                            <td>{$v.order_id}</td>
+                            <td>{$v.order_number}</td>
+                            <td>
+								<if condition="$v.pay_status == 1">
+									{$v.ali_sn}
+								</if>
+							
+							</td>
+                            <td>
+                                <php>echo $v["order_money"];</php>
+                            </td>
+                            <td>{$v.note}</td>
+                            <td>{$v.account}</td>
+                            <td>
+							<?php
+								if($v["pay_type"] == 1){
+									echo "微信";
+								}else{
+									if($v['trade_type'] == 'ALIPAYPC'){
+										echo '支付宝';
+									}else{
+										echo '支付宝(H5)';
+									}
+								}
+							?>
+                            </td>
+                            <td>
+                                <switch name='v.pay_status'>
+                                    <case value='0'><div style="color:orange;">待支付</div></case>
+                                    <case value='1'><div style="color: #68B83D">支付成功</div></case>
+                                    <case value='-1'><div style="color: #FF1111">支付失败</div></case>
+                                </switch>
+                            </td>
+                            <td>
+                            <if condition="$v['pay_status'] eq 1 ">
+                                <if condition="$v['notice_status'] eq 1 ">
+                                    <div style="color: #68B83D">发送成功</div>
+                                <else />
+                                    <div style="color: #FF1111">发送失败</div>
+
+                                </if>
+                            <else/>
+                                --
+                            </if>
+
+                            </td>
+                            <td>
+                                <php>echo date("Y-m-d H:i:s",$v["addtime"]);</php>
+                            </td>
+							<td>
+								<?php
+									if($v["codetime"]){
+										$arr = json_decode($v["codetime"],true);
+										echo end($arr);
+									}else{
+										echo "<div style='color: #FF1111'>未扫码</div>";
+									}
+								?>
+							</td>
+                            <td>
+                                <neq name='v.pay_time' value='0'>
+                                {$v.pay_time|date='Y-m-d H:i:s',###}
+                                </neq>
+                            </td>
+                            <td>
+                                <a href="{:U('Order/detail',array('d'=>$v['order_id']))}">查看详情</a>
+                                <if condition="$v['pay_status'] eq 1">
+                                    |
+                                    <a href="{:U('Order/send',array('d'=>$v['order_id']))}">订单重发</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-right">
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.form_datetime').datetimepicker({
+            language:  'zh-CN',
+            format: "yyyy-mm-dd hh:ii:ss",
+            autoclose: true
+        });
+    })
+    $('#paytype').change(function(){
+        var type = $("#paytype").val();
+        $.ajax({
+            url:'{:U("Order/getAccountList")}',
+            type:'get',
+            data:{type:type},
+            dataType:'json',
+            success:function(data){
+                if (data.state == 'SUCCESS') {
+                    $('#account').html(data.data);
+                }
+            }
+        })
+    })
+</script>

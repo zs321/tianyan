@@ -1,0 +1,221 @@
+<style type="text/css">
+    .form-control.input_w80{width: 80px;}
+</style>
+<div id="page-content">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">二维码列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+
+                    <div class="col-sm-6 table-toolbar-left">
+                        <a href="{:U('Qrcode/index')}" class="btn btn-default">微信</a>
+                        <a href="#" class="btn btn-primary">支付宝</a>
+                        <a href="{:U('Qrcode/add')}?type=2" class="btn btn-default"><i class="demo-pli-add"></i> 添加二维码</a>
+                    </div>
+                    <div class="col-sm-6 table-toolbar-right">
+
+                    </div>
+                </div>
+            </div>
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-12 table-toolbar">
+                        <form action="{:U('Qrcode/aliCode')}" method="get" onsubmit="return checkInput();">
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select2" class="control-label">所属账号：</label>
+                                <select class="form-control" name="account" id="dtp_select2">
+                                    <option value="">选择账号</option>
+                                    <foreach name='re' item='v'>
+                                        <option value="{$v.account}" <if condition="$v.account eq $account ">selected</if>>{$v.account}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_input3" class="control-label">金额范围</label>
+                                <input type="text" class="form-control input_w80" value="{$start_m}" name="start_m" placeholder="开始金额" id="start_m"/>-
+                                <input type="text" class="form-control input_w80" value="{$end_m}" name="end_m" placeholder="结束金额" id="end_m">
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_input3" class="control-label">备注范围：</label>
+                                <input type="text" class="form-control input_w80" value="{$start_n}" name="start_n" placeholder="开始备注" id="start_n">-
+                                <input type="text" class="form-control input_w80" value="{$end_n}" name="end_n" placeholder="结束备注" id="end_n">
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <label for="dtp_select2" class="control-label">状态：</label>
+                                <select class="form-control" name="tag" id="dtp_select2">
+                                    <option value="-1">选择状态</option>
+                                        <option value="0" <if condition="$tag eq 0">selected</if>>空闲</option>
+                                        <option value="1" <if condition="$tag eq 1">selected</if>>占用</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <button class="btn btn-default"><i class="ion-search"></i> 查询</button>
+                            </div>
+                            <div class="form-group" style="margin-right: 10px;margin-bottom: 10px;">
+                                <a href="{:U('Qrcode/decodeFailList')}?type=2" class="btn btn-primary">待解码</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">类型</th>
+                        <th class="text-center">二维码</th>
+                        <th class="text-center">二维码原图片</th>
+                        <th class="text-center">所属账号</th>
+                        <th class="text-center">金额</th>
+                        <th class="text-center">备注</th>
+                        <th class="text-center">状态</th>
+                        <th class="text-center">添加时间</th>
+                        <th class="text-center">操作管理</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="lists" item="v">
+                        <tr>
+                            <td>{$v.code_id}</td>
+                            <td>
+								支付宝
+							</td>
+                            <td>
+                            <empty name='v.qrdecode'>
+                                <a href="#" class="label label-table label-success" onclick="inputShow(this,{$v.code_id})" style="background: #38a0f4;">重解码</a>
+                            <else/>
+                            {$v.qrdecode}
+                            </empty>
+                            </td>
+                            <td>
+                            <notempty name='v.qrcode'>
+							
+								<?php 
+								
+									if(stripos($v["qrcode"],'HTTPS')){
+										echo $v["qrcode"];
+									} else{
+										echo $codePath.$v["qrcode"];
+									}
+								?>
+                            </notempty>
+                            </td>
+                            <td>{$v.account}</td>
+                            <td>{$v.money}</td>
+                            <td>{$v.note}</td>
+                            <td>
+                                <switch name='v.tag'>
+                                    <case value='0'><div class="label label-table label-success">空闲</div></case>
+                                    <case value='1'><div class="label label-table label-warning">占用</div></case>
+                                </switch>
+                            </td>
+                            <td>{$v.addtime|date="Y-m-d H:i:s",###}</td>
+                            <td>
+                                <a href="{:U('Qrcode/show',array('code_id'=>$v['code_id'],'type'=>2))}" target="_blank">查看</a>
+                                |
+                                <a href="#" onclick="delQrcode({$v['code_id']},'{$v.qrcode}',2)">删除</a>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-right">
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function checkInput(){
+        var start_m = $.trim($('#start_m').val());
+        var end_m = $.trim($('#end_m').val());
+        if (start_m != '') {
+            if (!judgeSign(start_m)) {
+                alert('开始金额请输入非负数！');
+                return false;
+            }
+        }
+        if (end_m != '') {
+            if (!judgeSign(end_m)) {
+                alert('结束金额请输入非负数！');
+                return false;
+            }
+        }
+        
+    }
+
+//判断一个变量是否是非负数
+function judgeSign(num) {
+    var reg = new RegExp("^-?[0-9]*.?[0-9]*$");
+    if ( reg.test(num) || num==0) {
+        var absVal = Math.abs(num);
+        if (absVal || num==0) {
+            return true;
+        }else{
+            return false;
+        }
+    }else {
+        return false;
+    }
+}
+
+/*删除二维码*/
+function delQrcode(code_id,qrcode,type){
+    var url = "{:U('Admin/Qrcode/del')}";
+    var data = {code_id:code_id,qrcode:qrcode,type:type};
+    $.ajax({
+        url : url,
+        data : data,
+        dataType : 'json',
+        type : 'post',
+        async : false,
+        success : function(result){
+            
+            if (result== 'success')
+            {
+                alert('操作成功！');
+                window.location.reload();
+            }else{
+                alert('操作失败！');
+            }
+        }
+    });
+}
+function inputShow(obj,code_id){
+    var html = '<input type="text" id="qrdecode" name="qrdecode"><input type="hidden" id="code_id" name="code_id" value="'+code_id+'"><span class="label label-table label-success" onclick="qrdecode(this)" style="background: #38a0f4;">提交</span>';
+    $(obj).parent().html(html);
+}
+function inputHide(obj,code_id){
+    var html = '<a href="#" class="label label-table label-success" style="background: #38a0f4;" onclick="inputShow(this,'+code_id+')">重解码</a>';
+    $(obj).parent().html(html);
+}
+/*二维码重新解码*/
+function qrdecode(obj){
+    var url = "{:U('Admin/Qrcode/qrdecode')}";
+    var qrdecode = $('#qrdecode').val();
+    var code_id = $('#code_id').val();
+    var type = 2;
+    var data = {code_id:code_id,qrdecode:qrdecode,type:type};
+    $.ajax({
+        url : url,
+        data : data,
+        dataType : 'json',
+        type : 'post',
+        async : false,
+        success : function(result){
+            if (result== 'success')
+            {
+                $(obj).parent().html(qrdecode);
+                alert('操作成功！');
+            }else{
+                alert('操作失败！');
+            }
+        }
+    });
+}
+</script>

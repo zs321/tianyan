@@ -1,0 +1,78 @@
+<div id="page-content">
+    <div class="row">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">订单详情</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" style="width: 80%;">
+                        <tbody>
+                        <tr>
+                            <td class="text-center" style="width: 10%;">订单编号</td>
+                            <td style="width: 20%;">{$detail.order_number}</td>
+                            <td class="text-center" style="width: 10%;">下单时间</td>
+                            <td style="width: 30%;"><php>echo date("Y-m-d H:i:s",$detail["addtime"]);</php></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">支付金额</td>
+                            <td><php>echo $detail["order_money"];</php></td>
+                            <td class="text-center">支付方式</td>
+                            <td>
+                                <switch name='detail.pay_type'>
+                                    <case value='1'>微信</case>
+                                    <case value='2'>支付宝</case>
+                                </switch>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="text-center">备注</td>
+                            <td>{$detail.note}</td>
+                            <td class="text-center">支付状态</td>
+                            <td>
+                                <switch name='detail.pay_status'>
+                                    <case value='0'>待支付</case>
+                                    <case value='1'>支付成功</case>
+                                    <case value='-1'>支付失败</case>
+                                </switch>
+                            </td>
+                        </tr>  
+                        <if condition="$detail['pay_status'] eq 1">
+                            <tr>
+                                <td class="text-center">下发状态</td>
+                                <td colspan="3">
+                                    <if condition="$detail['notice_status'] eq 1">
+                                        发送成功
+                                        <else />
+                                        发送失败
+                                    </if>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">下发地址</td>
+                                <td colspan="3">
+                                    {$detail.notice_url}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">下发数据</td>
+                                <td colspan="3">
+                                    {$detail.notice_data}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">返回数据</td>
+                                <td colspan="3">
+                                    {$detail.return_data}
+                                </td>
+                            </tr>
+                        </if>                      
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

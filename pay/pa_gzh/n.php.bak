@@ -1,0 +1,107 @@
+<?php
+header("Content-Type: text/html; charset=UTF-8");
+date_default_timezone_set('PRC');
+
+
+function createLinkstring($para) {
+	$arg  = "";
+	while (list ($key, $val) = each ($para)) {
+		$arg.=$key."=".$val."&";
+	}
+	//去掉最后一个&字符
+	$arg = substr($arg,0,count($arg)-2);
+	
+	//如果存在转义字符，那么去掉转义
+	if(get_magic_quotes_gpc()){$arg = stripslashes($arg);}
+	
+	return $arg;
+}
+
+
+
+include("web_sdk.php");
+$webApp=new webApp();
+
+
+
+$data['ord_no']		=		$_GET['ord_no'];
+$data['timestamp']	=		$_GET['timestamp'];
+$data['rand_str']	=		$_GET['rand_str'];
+$data['out_no']		=		$_GET['out_no'];
+$data['status']		=		$_GET['status'];
+$data['amount']		=		$_GET['amount'];
+$data['pay_time']	=		$_GET['pay_time'];
+
+
+
+
+$data['open_key']	=		$webApp::open_key;
+ksort($data);
+
+//echo md5(sha1(createLinkstring($data)));
+
+
+
+$data['sign']		=		$_GET['sign'];
+
+
+
+
+if ($data['status']==1){
+
+
+
+
+	$ad['out_no']		=$data['out_no'];
+	$ad['ord_no']		= $data['ord_no'];
+	$result = $webApp->api("order/view",$ad);
+	
+	
+
+
+	if ($result['data']['status']==1){
+
+
+	$tijiao="http://pay.yasjpay.com/receive/cared70/bank.aspx?";
+
+
+	$ext				=		$data['ord_no'];
+
+	
+	$returncode			=		"1";
+	$userid				=		"880349722";
+	$key				=		"133bcf78f8beede79825c8af1c0b0750";
+	$orderid			=		$data['out_no'];
+	$money				=		$result['data']['trade_amount']/100;
+
+	
+
+	$money				=		number_format($money, 2, '.', '');
+
+	$jiami				=		"returncode={$returncode}&userid={$userid}&orderid={$orderid}&keyvalue={$key}";
+	
+	
+
+	$jiami				=		md5(strtolower($jiami));
+	
+	
+	$jiamit				=		"money={$money}returncode={$returncode}&userid={$userid}&orderid={$orderid}&keyvalue={$key}";
+	
+	//echo $jiamit."|";
+	
+	$jiamit				=		md5(strtolower($jiamit));
+	
+	$canshu				=		"returncode={$returncode}&userid={$userid}&orderid={$orderid}&money={$money}&sign={$jiami}&sign2={$jiamit}&ext={$ext}";
+
+
+	$tijiao				.=		$canshu;
+
+	$html				=		@file_get_contents($tijiao);  	  
+
+
+	echo "notify_success";
+	}
+
+}
+
+?>

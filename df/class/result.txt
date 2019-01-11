@@ -1,0 +1,68 @@
+﻿================参数发送===================
+mcht_no：1000000000004；total_fee：100；body：testshop；trade_no：1517207154；notify_url：http://localhost/NotifyUrl；mch_create_ip：::1；nonce_str：1517193542；sign：4E6FA65017A2A4DEBF328E75CC1923E5；
+================结果接收===================
+status：0；statusMessage：成功；resultCode：000000；resultMsg：交易成功；sysNo：1517207154；qrCode：weixin://wxpay/bizpayurl?pr=i9FtjNp；sign：BC616C5826C1F95AB34390EEBFDCCF36；
+================149 getWxQrOrder 参数发送 ===================
+mcht_no：1000000000004；total_fee：100；body：testshop；trade_no：1517203100；notify_url：http://localhost/NotifyUrl；mch_create_ip：::1；nonce_str：1517193648；sign：AD469B95137137C2A0F1ED21A022197E；
+================152 getWxQrOrder 结果接收===================
+status：0；statusMessage：成功；resultCode：000000；resultMsg：交易成功；sysNo：1517203100；qrCode：weixin://wxpay/bizpayurl?pr=pnm1qT8；sign：665E832E4D29489882170B559CAE59A0；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521965074；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521962930；sign：0ADF6DFA51DA1CEDFE762FDE88B09D72；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521963900；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521963003；sign：4262E1E76A4B709B3EE88E7EEF8BAC87；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521979362；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521963163；sign：4D4CF6709EDDFC1F1A06DD10AC17C5D1；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521982636；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521963194；sign：9695D203023A121F380CE07AE67D87BF；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521967760；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521964748；sign：4427EAB9E41F06A85565D82350A3D923；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521973750；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521964779；sign：7121AC15E1D68196D14BA4F348E22194；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1521965684；body：提现；total_fee：60000；acc_type：PERSONNEL；card_name：王南洋；card_no：6217231313001329566；bank_name：；bank_no：；mobile：；id_type：01；id_no：341222199004049290；df_type：0；nonce_str：1521965466；sign：64319CE4DD1275FEFCA201329E85E4A6；
+================63 dfDistill 结果接收===================
+status：FAIL；message：代付余额不足001；
+================60 dfDistill 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1522161322；body：提现；total_fee：0；acc_type：PERSONNEL；card_name：；card_no：；bank_name：；bank_no：；mobile：；id_type：01；id_no：；df_type：0；nonce_str：1522158962；sign：19E5AF9753E808CE1CC24458C8B4F3DF；
+================63 dfDistill 结果接收===================
+status：FAIL；message：参数异常；
+================79 dfQry 参数发送===================
+sp_id：1010；mch_id：101000000000000；out_trade_no：1516873493；nonce_str：1522158986；sign：31B5397AE8F1B90F9A33808B01BD85AC；
+================82 dfQry 结果接收===================
+status：FAIL；message：找不到交易流水；
+================103 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522159010；sign：11C0EFEF4DA68C291903A6C281B6B76B；
+================106 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：83559；total_fee_t1：4013；nonce_str：ns1522159010；sign：540F72C7FD8F466A8C45DC580184B37F；
+================104 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522159096；sign：452002492E25E209A018F51A52A2D07E；
+================107 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：83559；total_fee_t1：4013；nonce_str：ns1522159096；sign：357CA9CABCEE711040C1F75CDCAE19C1；
+================104 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522166820；sign：806B2DDEDBF95F773F151A2EB9FA3C16；
+================107 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：83702；total_fee_t1：4020；nonce_str：ns1522166820；sign：A4174E21EB9B77DE1F4B2C49DBBBFADC；
+================104 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522205572；sign：C81A829F2E6774CC942F4C030BB34D03；
+================107 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：83987；total_fee_t1：4035；nonce_str：ns1522205572；sign：C79CFE940E62700A5D2FC45E5E8588D0；
+================104 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522374015；sign：7B5E73755F26A4FEE4184CB28CD0E23B；
+================107 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：84058；total_fee_t1：4104；nonce_str：ns1522374015；sign：1314953A359517F51052D97149EC1023；
+================104 dfBalance 参数发送===================
+sp_id：1010；mch_id：101000000000000；nonce_str：1522374823；sign：78182DCB8C9C9AD7A5B0620F0F8F4C9F；
+================107 dfBalance 结果接收===================
+status：SUCCESS；message：查询成功；total_fee：84058；total_fee_t1：4104；nonce_str：ns1522374823；sign：883396E140B98751DFA95729C6082EC0；

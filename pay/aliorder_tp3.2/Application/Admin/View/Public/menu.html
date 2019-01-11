@@ -1,0 +1,27 @@
+<ul id="mainnav-menu" class="list-group">
+
+    <!--Category name-->
+    <li class="list-header">管理中心</li>
+
+    <!--Menu list item-->
+    <?php $menu=C('ADMIN_MENU');  foreach($menu as $key=>$val){?>
+    <li <?php if(in_array(CONTROLLER_NAME,$val['active'])){echo 'class="active-sub"';}?>>
+    <a href="{:U($val['url'],$val['param'])}">
+        <i class="{$val['icon']}"></i>
+        <span class="menu-title">{$val['name']}</span>
+        <i class="arrow"></i>
+    </a>
+    <?php if(count($val['menu'])){?>
+    <ul class="collapse  <?php if(in_array(CONTROLLER_NAME,$val['active'])){echo 'in';}?>">
+        <?php if($val['menu']){ foreach($val['menu'] as $k=>$v){?>
+        <li <?php if(strtolower(CONTROLLER_NAME."/".ACTION_NAME)==strtolower($v['url'])){echo 'class="active-link"';}?>>
+            <a href="<?php echo U($v['url'],$v['param']);?>">
+                <?php echo $v['name'];?>
+            </a>
+        </li>
+        <?php }}?>
+    </ul>
+    <?php }?>
+    </li>
+    <?php }?>
+</ul>

@@ -1,0 +1,40 @@
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lasttime' in 'order clause'
+select userkey,id from wy_acp  where userid=? and code=?   ORDER BY lasttime 
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]207
+[class]WY\app\libs\Model
+2018-12-03 10:08:02
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lasttime' in 'field list'
+UPDATE wy_acp SET lasttime=? where id=? 
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]266
+[class]WY\app\libs\Db
+2018-12-03 10:08:02
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lasttime' in 'order clause'
+select userkey,id from wy_acp  where userid=? and code=?   ORDER BY lasttime 
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]208
+[class]WY\app\libs\Model
+2018-12-03 10:10:20
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lasttime' in 'order clause'
+select userkey,id from wy_acp  where userid=? and code=?   ORDER BY lasttime 
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]208
+[class]WY\app\libs\Model
+2018-12-03 10:11:55
+127.0.0.1
+

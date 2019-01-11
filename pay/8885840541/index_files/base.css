@@ -1,0 +1,47 @@
+@charset "utf-8";	
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0;}
+body{color: #fff; font-family: "微软雅黑"; font-size: 12px;}
+img{border: none; vertical-align:top;}
+a:link,a:hover,a:active,a:visited{ text-decoration: none;}
+label{cursor:pointer;}
+em,b,i{font-style: normal;}
+ul li{list-style: none;}
+.w{ width:1000px; margin:0 auto;}
+img.lazy{background: url(../images/loading008.gif) #fff 50% 50% no-repeat;}
+.head{background: url(../images/index/top_bg.jpg) center top no-repeat;}
+.head_cont,.main_cont{width: 1000px;margin: 0 auto;}
+
+/*-----------头部------------*/
+.header{ background:#fff; height:175px;}
+.header_main{height:132px;}
+.header_l{ width:270px; float:left; }
+.header_c{width:570px; float:left;}
+.header_r{width:150px; float: right; height:132px}
+.header_r p{ color:#350954; margin-top: 32px; padding-bottom: 5px;}
+.header_r a{display:block; width:92px; height:20px; background:url(../images/index201510/icon_02.jpg) no-repeat;}
+
+/*-----------模块1--导航-----------*/
+.header .nav{  height:38px; background:url(../images/index201510/nav_bg.png) no-repeat; border-radius:20px; }
+.header .nav .one{margin-left:93px; display:inline;}
+.header .nav_f{ position:fixed; top:0; left:50%; margin-left:-500px;}
+.nav ul li{float:left;}
+.nav a{ font-size:16px; color:#fff; display: inline-block; zoom:1; line-height:38px;padding:0 25px 0 16px; background:url(../images/index201510/icon_01.jpg) no-repeat right;}
+.nav a:hover{color:#ffd573;}
+
+/*----------------------------------*/
+.top{height: 133px;}
+.top h1{height: 133px;width: 280px;float: left;background: url(../images/index/logo.jpg) no-repeat;}
+.r_silde{float: left;padding:45px 10px 0px 574px;width: 136px;height: 88px;background: url(../images/index/tel_bg.jpg) no-repeat;}
+.r_silde p{line-height: 22px;color: #530d83;}
+.r_silde p a{color: #530d83;}
+.r_silde p a.buy{display: block;width: 92px;height: 20px;background: url(../images/index/buy.png) no-repeat;}
+.r_silde p em{color: #b70007;}
+.navbar{height: 22px;line-height:22px;background: url(../images/index/nav_bg.jpg) no-repeat;padding:9px 30px 13px 50px; font-size: 15px;font-family: "微软雅黑"}
+.navbar ul{overflow: hidden;zoom:1;}
+.navbar li{float: left;padding: 0 31px 0 25px;}
+.navbar li a{color: #fff;}
+.navbar li a:hover{color: #fffd00;}
+.main{background: url(../images/index/bd_bg.jpg) center top repeat-y;}
+.main_cont img{display: block;}
+.footer{margin: 0 auto;width:1000px;height:150px;text-align: center;color: #646363;background:#fff;padding-top: 20px;}
+.footer p{line-height: 22px; font-size: 12px;}

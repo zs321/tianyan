@@ -1,0 +1,40 @@
+<link href="__CSS__/magic-check.min.css" rel="stylesheet">
+<div id="page-content">
+    <div class="row">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">二维码有效期设置</h3>
+            </div>
+            <form class="panel-body form-horizontal form-padding" method="post" action="{:U('Qrcode/valiHandle')}<notempty name='re'>?id={$re.id}</notempty>" onsubmit="return check()">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">有效期</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" name="validity" value="{$re.validity}" id="validity">
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <label class="col-md-8 control-label" style="text-align: left;">备注：单位为秒，填0或不填则默认长期有效</label>
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="form-group text-center">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-block btn-primary">点击提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function check() {
+        var validity = $('#validity').val();
+        if (validity == null || $.trim(validity)=='') {
+            alert('请输入有效期');
+            return false;
+        }
+        return true;
+    }
+</script>

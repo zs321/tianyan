@@ -1,0 +1,40 @@
+<style type="text/css">
+    .gold{color:#000;font-weight: bold;}
+    .succ{color:#51C332;font-weight: bold;}
+    .false{color:orange;font-weight: bold;}
+</style>
+<div id="page-content">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">数据统计</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th class="text-center"></th>
+                        <th class="text-center">成功总额</th>
+                        <th class="text-center">成功总数</th>
+                        <th class="text-center">失败总数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="background: #51C332;color: #fff;">微信</td>
+                            <td class="gold">￥{$wx_amount}</td>
+                            <td class="succ">{$wx_success}</td>
+                            <td class="false">{$wx_fail}</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #0C80DF;color: #fff;">支付宝</td>
+                            <td class="gold">￥{$ali_amount}</td>
+                            <td class="succ">{$ali_success}</td>
+                            <td class="false">{$wx_fail}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

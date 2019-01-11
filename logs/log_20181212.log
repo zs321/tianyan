@@ -1,0 +1,50 @@
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'salt' in 'where clause'
+select * from wy_atc  where left(salt,20)=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\model\Qrcode.php
+[line]26
+[class]WY\app\libs\Model
+2018-12-12 14:47:52
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+select code_type from wy_atc  where account_type=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\model\Qrcode.php
+[line]27
+[class]WY\app\libs\Model
+2018-12-12 15:01:44
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+select code_type from wy_atc  where account_type=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\model\Qrcode.php
+[line]27
+[class]WY\app\libs\Model
+2018-12-12 15:03:18
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+select code_type from wy_atc  where account_type=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\model\Qrcode.php
+[line]27
+[class]WY\app\libs\Model
+2018-12-12 15:03:29
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+select * from wy_atc  where account_type=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\model\Qrcode.php
+[line]26
+[class]WY\app\libs\Model
+2018-12-12 15:04:14
+127.0.0.1
+

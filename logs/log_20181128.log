@@ -1,0 +1,60 @@
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:04:27
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:05:20
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:06:20
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:10:38
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:11:32
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from wy_users  where id='10000'' at line 1
+select  from wy_users  where id=?    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\api.php
+[line]61
+[class]WY\app\libs\Model
+2018-11-28 15:17:07
+127.0.0.1
+

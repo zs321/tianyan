@@ -1,0 +1,107 @@
+<div id="page-content">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">账号列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-6 table-toolbar-left">
+                        <a href="{:U('Account/addEdit')}" class="btn btn-primary"><i class="demo-pli-add"></i> 添加账号</a>
+                    </div>
+                    <div class="col-sm-6 table-toolbar-right">
+                        <form action="{:U('Account/accountList')}" method="get">
+                        <div class="form-group">
+                            <label for="dtp_select1" class="control-label">账号类型：</label>
+                            <select class="form-control" name="type" id="dtp_select1">
+                                <option value="">选择账号类型</option>
+                                <option value="1" <if condition="$type eq '1'">selected</if>>微信</option>
+                                <option value="2" <if condition="$type eq '2'">selected</if>>支付宝</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input name="account" type="text" <empty name='account'>placeholder="输入账号检索"<else/>value='{$account}'</empty> class="form-control" autocomplete="off">
+                            <button class="btn btn-default"><i class="ion-search"></i></button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">账号</th>
+                        <th class="text-center">备注</th>
+                        <th class="text-center">类型</th>
+                        <th class="text-center">帐号性质</th>
+                        <th class="text-center">金额范围</th>
+                        <th class="text-center">添加时间</th>
+                        <th class="text-center">用户状态</th>
+                        <th class="text-center">在线状态</th>
+                        <th class="text-center">操作管理</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="lists" item="v">
+                        <tr>
+                            <td>{$v.account_id}</td>
+                            <td>{$v.account}</td>
+                            <td>{$v.note}</td>
+                            <td>
+                                <switch name='v.type'>
+                                    <case value='1'>微信</case>
+                                    <case value='2'>支付宝</case>
+                                </switch>
+                            </td>
+							<td>
+                                <switch name='v.astatus'>
+                                    <case value='0'>个人</case>
+                                    <case value='1'>企业</case>
+                                </switch>
+                            </td>
+                            <td>{$v.min}——{$v.max}</td>
+                            <td><php>echo date("Y-m-d H:i:s",$v["addtime"]);</php></td>
+                            <td>
+                                <if condition="$v['status'] eq 0">
+                                    <div class="label label-table label-success">正常</div>
+                                    <else />
+                                    <div class="label label-table label-warning">禁用</div>
+                                </if>
+                            </td>
+                            <td>
+                                <if condition="$v['is_online'] eq 1">
+                                    <div class="label label-table label-success">在线</div>
+                                    <else />
+                                    <div class="label label-table label-warning">离线</div>
+                                </if>
+                            </td>
+                            <td>
+                                <if condition="$v['is_online'] eq 1">
+                                    <a href="{:U('Account/setOnline',array('d'=>$v['account_id'],'s'=>0))}">设为离线</a>
+                                    <else />
+                                    <a href="{:U('Account/setOnline',array('d'=>$v['account_id'],'s'=>1))}">设为在线</a>
+                                </if>
+                                |
+                                <if condition="$v['status'] eq 0">
+                                    <a href="{:U('Account/disable',array('d'=>$v['account_id'],'s'=>1))}">禁用</a>
+                                    <else />
+                                    <a href="{:U('Account/disable',array('d'=>$v['account_id'],'s'=>0))}">启用</a>
+                                </if>
+                                |
+                                <a href="{:U('Account/addEdit',array('account_id'=>$v['account_id']))}">编辑</a>
+                                |
+                                <a href="{:U('Account/del',array('account_id'=>$v['account_id']))}">删除</a>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-right">
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>

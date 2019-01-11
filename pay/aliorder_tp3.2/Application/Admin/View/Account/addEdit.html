@@ -1,0 +1,135 @@
+<link href="__CSS__/magic-check.min.css" rel="stylesheet">
+<style type="text/css">
+    .min{color: red;}
+</style>
+<div id="page-content">
+    <div class="row">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">{$act}账号</h3>
+            </div>
+            <form class="panel-body form-horizontal form-padding" method="post" action="{:U('Account/dataHandle')}<notempty name='re'>?account_id={$re.account_id}</notempty>" onsubmit="return check()">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">账号：</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="account" value="{$re.account}" id="account">
+                        <input type="hidden" name="oldAccount" value="{$re.account}">
+                    </div>
+                    <label class="col-md-2 control-label min" style="text-align: left;"></label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">备注：</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="note" value="{$re.note}" id="note">
+                    </div>
+                    <label class="col-md-2 control-label min" style="text-align: left;"></label>
+                </div>
+				<div class="form-group">
+                    <label class="col-md-3 control-label">支付宝UserId：</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="ali_userid" value="{$re.ali_userid}" id="ali_userid">
+                    </div>
+                    <label class="col-md-2 control-label min" style="text-align: left;"></label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">金额范围：</label>
+                    <div class="col-md-3">
+                        <select class="form-control" name="amount" id="amount">
+                            <foreach name='amount' item='v'>
+                                <option value="{$v.min}——{$v.max}" <if condition='($v.min eq $re.min ) and ($v.max eq $re.max )'>selected='selected'</if>>{$v.min}——{$v.max}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                    <label class="col-md-2 control-label min" style="text-align: left;"></label>
+                </div>
+                <div class="form-group pad-ver">
+                    <label class="col-md-3 control-label">账号类型：</label>
+                    <div class="col-md-9">
+                        <notempty name='re'>
+                            <div class="radio">
+                                <input id="hot_0" class="magic-radio" type="radio" name="type" value="1" <if condition="$re.type eq 1">checked</if>>
+                                <label for="hot_0">微信</label>
+
+                                <input id="hot_1" class="magic-radio" type="radio" name="type" value="2" <if condition="$re.type eq 2">checked</if>>
+                                <label for="hot_1">支付宝</label>
+                            </div>
+                        <else/>
+                            <div class="radio">
+                                <input id="hot_0" class="magic-radio" type="radio" name="type" value="1" checked>
+                                <label for="hot_0">微信</label>
+
+                                <input id="hot_1" class="magic-radio" type="radio" name="type" value="2" >
+                                <label for="hot_1">支付宝</label>
+                            </div>
+                        </notempty>
+                    </div>
+                </div>
+				<div class="form-group pad-ver">
+                    <label class="col-md-3 control-label">帐号性质</label>
+                    <div class="col-md-9">
+                        <notempty name='re'>
+                            <div class="radio">
+                                <input id="hot_2" class="magic-radio" type="radio" name="astatus" value="0" <if condition="$re.astatus eq 0">checked</if>>
+                                <label for="hot_2">个人</label>
+
+                                <input id="hot_3" class="magic-radio" type="radio" name="astatus" value="1" <if condition="$re.astatus eq 1">checked</if>>
+                                <label for="hot_3">企业</label>
+                            </div>
+                        <else/>
+                            <div class="radio">
+                                <input id="hot_2" class="magic-radio" type="radio" name="astatus" value="0" >
+                                <label for="hot_2">个人</label>
+
+                                <input id="hot_3" class="magic-radio" type="radio" name="astatus" value="1" checked>
+                                <label for="hot_3">企业</label>
+                            </div>
+                        </notempty>
+                    </div>
+                </div>
+				
+                <div class="form-group pad-ver">
+                    <label class="col-md-3 control-label">账号状态：</label>
+                    <div class="col-md-9">
+                        <notempty name='re'>
+                            <div class="radio">
+                                <input id="hot_2" class="magic-radio" type="radio" name="status" value="0" <if condition="$re.status eq 0">checked</if>>
+                                <label for="hot_2">启用</label>
+
+                                <input id="hot_3" class="magic-radio" type="radio" name="status" value="1" <if condition="$re.status eq 1">checked</if>>
+                                <label for="hot_3">禁用</label>
+                            </div>
+                        <else/>
+                            <div class="radio">
+                                <input id="hot_2" class="magic-radio" type="radio" name="status" value="0" checked>
+                                <label for="hot_2">启用</label>
+
+                                <input id="hot_3" class="magic-radio" type="radio" name="status" value="1" >
+                                <label for="hot_3">禁用</label>
+                            </div>
+                        </notempty>
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="form-group text-center">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-block btn-primary">点击提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function check() {
+        var account = $('#account').val();
+        if (account == null || $.trim(account)=='') {
+            $('.min').html('账号不能为空');
+            return false;
+        }else{
+            $('.min').html('');
+        }
+        return true;
+    }
+</script>

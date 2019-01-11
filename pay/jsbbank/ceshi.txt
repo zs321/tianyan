@@ -1,0 +1,20 @@
+
+2018-05-31 18:20:31  回调信息：{"order_amount":"100","order_no":"2018053118181353640","order_time":1527761894312,"pay_type":"","payment":"\u652f\u4ed8\u6210\u529f","product_code":"test-php-demo","product_name":"test-php-demo","user_no":"Neo1314"} 
+  回调信息：Array 
+  回调信息：2018053118181353640 
+  回调信息： 
+
+2018-05-31 18:21:09  回调信息：{"order_amount":"100","order_no":"2018053118203326812","order_time":1527762033408,"pay_type":"","payment":"\u652f\u4ed8\u6210\u529f","product_code":"test-php-demo","product_name":"test-php-demo","user_no":"Neo1314"} 
+  回调信息：Array 
+  回调信息：2018053118203326812 
+  回调信息： 
+
+2018-05-31 18:21:15  回调信息：{"order_amount":"100","order_no":"2018053118203326812","order_time":1527762033408,"pay_type":"","payment":"\u652f\u4ed8\u6210\u529f","product_code":"test-php-demo","product_name":"test-php-demo","user_no":"Neo1314"} 
+  回调信息：Array 
+  回调信息：2018053118203326812 
+  回调信息： 
+
+2018-05-31 18:21:26  回调信息：{"order_amount":"100","order_no":"2018053118203326812","order_time":1527762033408,"pay_type":"","payment":"\u652f\u4ed8\u6210\u529f","product_code":"test-php-demo","product_name":"test-php-demo","user_no":"Neo1314"} 
+  回调信息：Array 
+  回调信息：2018053118203326812 
+  回调信息： 

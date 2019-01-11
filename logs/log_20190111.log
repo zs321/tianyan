@@ -1,0 +1,60 @@
+/index.php
+WY/pay/guma/send load fail.
+2019-01-11 10:05:23
+127.0.0.1
+
+/index.php
+WY/pay/guma/send load fail.
+2019-01-11 10:07:06
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'nate_gate_url' doesn't have a default value
+INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]235
+[class]WY\app\libs\Db
+2019-01-11 10:15:46
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'nate_gate_url' doesn't have a default value
+INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]235
+[class]WY\app\libs\Db
+2019-01-11 10:15:53
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'nate_gate_url' doesn't have a default value
+INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]235
+[class]WY\app\libs\Db
+2019-01-11 10:16:18
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'nate_gate_url' doesn't have a default value
+INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]235
+[class]WY\app\libs\Db
+2019-01-11 10:17:58
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'nate_gate_url' doesn't have a default value
+INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]235
+[class]WY\app\libs\Db
+2019-01-11 10:18:43
+127.0.0.1
+
