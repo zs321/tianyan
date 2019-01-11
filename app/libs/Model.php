@@ -84,6 +84,7 @@ class Model
         }
         return $this;
     }
+
     function on($on)
     {
         $this->on = $on;
@@ -130,7 +131,16 @@ class Model
         return $sql;
     }
 
+    function query($sql = ""){
+        $stm = $this->db->prepare($sql);
+        $this->db->execute($stm);
 
+        if ($stm->rowCount()) {
+            return $this->db->fetchRow($stm);
+        }
+
+        return false;
+    }
 
     function toDubugSql()
     {

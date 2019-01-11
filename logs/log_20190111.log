@@ -58,3 +58,203 @@ INSERT INTO wy_acp (name,code,email,userid,userkey) VALUES(?,?,?,?,?)
 2019-01-11 10:18:43
 127.0.0.1
 
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'channelid' in 'field list'
+select channelid from wy_acc  where id    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]152
+[class]WY\app\libs\Model
+2019-01-11 16:38:16
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'channelid' in 'field list'
+select channelid from wy_acc  where id    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]153
+[class]WY\app\libs\Model
+2019-01-11 16:49:28
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'channelid' in 'field list'
+select channelid from wy_acc  where id    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]152
+[class]WY\app\libs\Model
+2019-01-11 16:50:23
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'channelid' in 'field list'
+select channelid from wy_acc  where id    
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]152
+[class]WY\app\libs\Model
+2019-01-11 16:51:19
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where channelid in Array' at line 1
+where channelid in Array
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]153
+[class]WY\app\libs\Model
+2019-01-11 17:04:41
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where channelid in Array' at line 1
+where channelid in Array
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]153
+[class]WY\app\libs\Model
+2019-01-11 17:04:50
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where channelid in Array' at line 1
+where channelid in Array
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]153
+[class]WY\app\libs\Model
+2019-01-11 17:04:56
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in Array' at line 1
+where id in Array
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:05:06
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in Array' at line 1
+where id in Array
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:05:24
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in 110,107,102' at line 1
+where id in 110,107,102
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:08:58
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:09:18
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:10:34
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:10:35
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:10:41
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:10:48
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:11:04
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:11:04
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:11:09
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:11:13
+127.0.0.1
+
+/index.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id in (110,107,102)' at line 1
+where id in (110,107,102)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\apisubmit.php
+[line]154
+[class]WY\app\libs\Model
+2019-01-11 17:11:26
+127.0.0.1
+

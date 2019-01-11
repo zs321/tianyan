@@ -137,17 +137,35 @@ $this->userData:Array
         }
 		
         /*$acc=$this->model()->select()->from('acc')->where(array('fields'=>'acwid=? and is_state=?','values'=>array($acw['id'],0)))->fetchAll();if(!$acc){echo $this->ret->put('103',$cardnum ? true : false);exit;}$userprice=$this->model()->select()->from('userprice')->where(array('fields'=>' userid=?','values'=>array($customerid)))->fetchAll();if(!$userprice){echo $this->ret->put('101',$cardnum ? true : false);exit;}$is_state=$channelid=$acpcode=$gateway=$is_state_acc='';foreach($userprice as $key=>$val){foreach($acc as $key2=>$val2){if($val['channelid']==$val2['id']){$is_state=$val['is_state'];$channelid=$val['channelid'];$acpcode=$val2['acpcode'];$gateway=$val2['gateway'];$is_state_acc=$val2['is_state'];break;}}}if($acpcode=='' || $gateway==''){echo $this->ret->put('103',$cardnum ? true : false);exit;}if($is_state=='1'){echo $this->ret->put('100',$cardnum ? true : false);exit;}if($is_state_acc=='1'){echo $this->ret->put('102',$cardnum ? true : false);exit;}*/
-        
-		
-		
-		
-		
-		
-		//根据通用网关和商户查找对应接入商、网关、通道、通道状态、通道分成比率、通道分成比率状态
-        //acc和userprice表
-		$acc = $this->model()->select('a.id,a.acpcode,a.gateway,a.is_state,b.is_state as is_state_acc,b.channelid')->from('acc a')->left('userprice b')->on('b.channelid=a.id')->join()->where(array('fields' => 'b.userid=? and a.acwid=?', 'values' => array($customerid, $acw['id'])))->fetchRow();
 
+
+        //判断用户是否存在通道分组id
+        if($this->userData['group_id']){
+            // 如果存在通过分组和轮询去找到通道
+            $group = $this->model()->select('channelid')->from('channelgroup')->where(array('fields'=>'group_id','values'=>array($this->userData['group_id'])))->fetchRow();
+            if(!$group['channelid']) {
+                echo $this->ret->put('218', $cardnum ? true : false);
+                exit;
+            }
+            $channel_sql = 'select * from wy_acc where id in ('.$group['channelid'].') order by last_time';
+            $acc = $this->model()->query($channel_sql);
+//            dump($acc,1,1);
+        }else{
+            //如果不存在根据通用网关和商户查找对应接入商、网关、通道、通道状态、通道分成比率、通道分成比率状态
+            //acc和userprice表
+            $acc = $this->model()->select('a.id,a.acpcode,a.gateway,a.is_state,b.is_state as is_state_acc,b.channelid')->from('acc a')->left('userprice b')->on('b.channelid=a.id')->join()->where(array('fields' => 'b.userid=? and a.acwid=?', 'values' => array($customerid, $acw['id'])))->fetchRow();
+
+        }
+
+
+
+
+
+
+//        $sql = $this->model()->select('a.id,a.acpcode,a.gateway,a.is_state,b.is_state as is_state_acc,b.channelid')->from('acc a')->left('userprice b')->on('b.channelid=a.id')->join()->where(array('fields' => 'b.userid=? and a.acwid=?', 'values' => array($customerid, $acw['id'])))->toDubugSql();
         //分组 轮询通道
+//         dump($this->userData,1,1);
+
 
 
 //        dump($acc,1,1);
