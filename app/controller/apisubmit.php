@@ -222,7 +222,7 @@ class apisubmit extends api
         // $url = 'http://' . $this->req->server('HTTP_HOST') . '/pay/' . $acpcode . '_' . $gateway . '/send.php';
         $url = 'http://' . $this->req->server('HTTP_HOST') . '/pay/' . $acpcode . '/send.php';
 
-        $url .= '?wg='.$gateway .'&orderid=' . $orderid . '&price=' . $total_fee . '&bankcode=' . $bankcode . '&remark=' . $remark.'&userid='.$this->userData['id'];
+        $url .= '?wg='.$gateway .'&orderid=' . $orderid . '&price=' . $total_fee . '&bankcode=' . $bankcode . '&remark=' . $remark.'&userid='.$this->userData['id']. '&trade_type=' . $trade_type;
 
         $this->res->redirect($url);
 

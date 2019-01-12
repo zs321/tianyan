@@ -9,7 +9,7 @@ class Payacp extends Controller
 {
     public function get($acpcode)
     {
-        $banklist = $this->model('email,userid,userkey')->select()->from('acp')->where(array('fields' => 'code=?', 'values' => array($acpcode)))->fetchRow();
+        $banklist = $this->model('email,userid,userkey,nate_gate_url')->select()->from('acp')->where(array('fields' => 'code=?', 'values' => array($acpcode)))->fetchRow();
 //        dump($banklist,'',1);
         return $banklist;
     }

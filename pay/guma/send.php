@@ -12,24 +12,24 @@ function Post($url,$post_data){
     return $data;
 }
 
-$submit['ali_account'] = $email;  //
+$submit['ali_account'] = $email;  //账号
 $submit['attach'] = $_REQUEST['remark'];
 $submit['body'] = '购买商品-在线支付';
 
-$submit['net_gate_url'] = 'http://api6.1899pay.com:81';  //后台添加
+$submit['net_gate_url'] = $nate_gate_url;  //后台添加
 
-$submit['notice_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/notify.php';
+$submit['notice_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/notify.php';  //支付完成之后的异步回调地址
 $submit['out_trade_no'] = $_REQUEST['orderid'];
-$submit['return_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/return.php';
+$submit['return_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/return.php'; //暂时没啥用
 $submit['total_fee'] = number_format($_REQUEST['price'],2,".","");
-$submit['trade_type'] = 'ALIPAYPC';   //从demo程序传过来的
+$submit['trade_type'] = $_REQUEST['trade_type'];   //从demo程序传过来的
 $submit['sign'] = createSign($submit);
 
 $url = "http://ai.1899pay.com/index.php/Api/Pay/set/";
 $data = Post($url,$submit);
 $data = json_decode($data,true);
-
-$data["pay_url"] = "http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00";
+dump($data,1,1);
+//$data["pay_url"] = "http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00";
 isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;
 isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
 ?>

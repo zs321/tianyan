@@ -49,6 +49,15 @@
                                     value="<?php echo $val['userkey']?>">
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        内网穿透地址
+                                    </span>
+                                    <input type="text" name="nate_gate_url" class="form-control" placeholder="密钥"
+                                           value="<?php echo $val['nate_gate_url']?>">
+                                </div>
+                            </div>
                             <div class="input-group">
                                 <button type="submit" class="btn btn-success">
                                     &nbsp;
@@ -102,7 +111,7 @@
                     接入账号：
                 </label>
                 <div class="col-md-4">
-                    <input type="text" name="email" class="form-control">
+                    <input type="text" name="email" class="form-control" required>
                 </div>
             </div>
             <div class="form-group">
@@ -119,6 +128,14 @@
                 </label>
                 <div class="col-md-4">
                     <input type="text" name="userkey" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-md-2 control-label">
+                    内网穿透地址：
+                </label>
+                <div class="col-md-4">
+                    <input type="text" name="nate_gate_url" class="form-control" required>
                 </div>
             </div>
             <div class="form-group">

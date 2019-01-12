@@ -34,11 +34,12 @@ class api extends Controller
         $sign = $this->req->request('sign');   //MD5签名
         $cardnum = $this->req->request('cardnum');   //用于判断返回json数据还是直接返回
         $fromurl = $this->req->request('fromurl');   //参数没在demo找到
+        $trade_type = $this->req->request('trade_type');   //ALIPAYPC ALIPAYWAP
         if (!isset($_REQUEST) || !$_REQUEST) {
             echo $this->ret->put('208', $cardnum ? true : false);
             exit;
         }
-        if ($version == '' || $customerid == '' || $total_fee == '' || $sdorderno == '' || $paytype == '' || $notifyurl == '' || $sign == '') {
+        if ($version == '' || $customerid == '' || $total_fee == '' || $sdorderno == '' || $paytype == '' || $notifyurl == '' || $sign == '' || $trade_type == '') {
             echo $this->ret->put('200', $cardnum ? true : false);
             exit;
         }
@@ -101,7 +102,7 @@ class api extends Controller
                 exit;
             }
         }
-        $this->params = array('version' => $version, 'customerid' => $customerid, 'sdorderno' => $sdorderno, 'total_fee' => number_format($total_fee, 2, '.', ''), 'paytype' => $paytype, 'bankcode' => $bankcode, 'notifyurl' => $notifyurl, 'returnurl' => $returnurl, 'remark' => $remark, 'sign' => $sign, 'cardnum' => $cardnum, 'fromurl' => $fromurl);
+        $this->params = array('version' => $version, 'customerid' => $customerid, 'sdorderno' => $sdorderno, 'total_fee' => number_format($total_fee, 2, '.', ''), 'paytype' => $paytype, 'bankcode' => $bankcode, 'notifyurl' => $notifyurl, 'returnurl' => $returnurl, 'remark' => $remark, 'sign' => $sign, 'cardnum' => $cardnum, 'fromurl' => $fromurl,'trade_type'=>$trade_type);
 
     }
 }
