@@ -12,12 +12,11 @@ function Post($url,$post_data){
     return $data;
 }
 
-$submit['ali_account'] = $email;  //
+
+$submit['ali_account'] = "2897483365@qq.com";
 $submit['attach'] = $_REQUEST['remark'];
 $submit['body'] = '购买商品-在线支付';
-
-$submit['net_gate_url'] = 'http://api6.1899pay.com:81';  //后台添加
-
+$submit['net_gate_url'] = 'http://api6.1899pay.com:81';
 $submit['notice_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/notify.php';
 $submit['out_trade_no'] = $_REQUEST['orderid'];
 $submit['return_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/return.php';
@@ -27,11 +26,13 @@ $submit['sign'] = createSign($submit);
 
 $url = "http://ai.1899pay.com/index.php/Api/Pay/set/";
 $data = Post($url,$submit);
-$data = json_decode($data,true);
 
-$data["pay_url"] = "http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00";
+
+
 isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;
+
 isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -57,15 +58,15 @@ isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
                     if (autoRedirectCount == 0) {
                         window.clearInterval(timer);
                         $("#btnpay").html("下一步");
-                        $("#btnpay").attr("class", "bt");
-                        $("#btnpay").removeAttr("disabled");
+                        // $("#btnpay").attr("class", "bt");
+                        // $("#btnpay").removeAttr("disabled");
                         if (isiOS) {
                             //  window.location.href = 'http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00';
                         } else {
                             //  goalipay();
                         }
                     } else {
-                        $("#btnpay").html("下一步<span style='color:#01AAED'>(" + autoRedirectCount + ")</span>");
+                        $("#btnpay").html("下一步<span style=\"color:#01AAED\">(" + autoRedirectCount + ")</span>");
                     }
                     autoRedirectCount--;
                 }, 1000);
@@ -94,14 +95,21 @@ isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
     </script>
 </head>
 <body>
+<form name="form2" method="post" action="WebForm1.aspx" id="form2">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAwMDE0MTgyNWRkLP+o0loWO6NQusU8yFBgmMVGPDywFuLirR7kNnNIXk8=" />
+    </div>
+
     <div class="out">
-        <div class="ewm" id="qr_container"></div>
+        <div class="ewm" id="qr_container">
+        </div>
         <button class="bt grey" id="btnpay" onclick="goalipay()" disabled="disabled" type="button">下一步</button>
         <div class="tstit">如无法调起支付？</div>
         <div class="ts"><span>1</span>请截屏先保存二维码到手机</div>
         <div class="ts"><span>2</span>打开<label id="payType">支付宝</label>，扫一扫本地图片。</div>
     </div>
-    <script>GetQrCode("<?php echo $payUrl; ?>", 'alipay');</script>
+    <!--http://www.99yida.com/pay/api_grskmpay/4.aspx?id=2088332374174727,201812191602350043,1.00-->
+    <script>GetQrCode(<?php echo $payUrl; ?>, 'alipay');</script>
 </form>
 </body>
 </html>

@@ -132,6 +132,18 @@ class Model
         return $sql;
     }
 
+
+    function queryAll($sql = ""){
+        $stm = $this->db->prepare($sql);
+        $this->db->execute($stm);
+
+        if ($stm->rowCount()) {
+            return $this->db->fetchAll($stm);
+        }
+
+        return false;
+    }
+
     function query($sql = ""){
         $stm = $this->db->prepare($sql);
         $this->db->execute($stm);
@@ -157,12 +169,17 @@ class Model
             $data = $this->db->parseWhere($this->where);
 
             $sql = str_replace('{where}', $data['where'], $sql);
+
             $sqls = explode("?",$sql);
 
             foreach ($data["values"] as $key=>$row){
-                $sqls[$key]  = $sqls[$key]."'$row'";
+                if(strstr($sql,"in")){
+                    $sqls[$key]  = $sqls[$key]."$row";
+                }else{
+                    $sqls[$key]  = $sqls[$key]."'$row'";
+                }
             }
-            $sql = implode($sqls,"");
+                $sql = implode($sqls,"");
         }
         dump($sql,1,1);
     }
@@ -178,7 +195,10 @@ class Model
         $data = array();
         if ($this->where) {
             $data = $this->db->parseWhere($this->where);
+
             $sql = str_replace('{where}', $data['where'], $sql);
+
+
         } else {
             $sql = str_replace('{where}', '', $sql);
         }
@@ -207,6 +227,7 @@ class Model
         if ($this->where) {
             $data = $this->db->parseWhere($this->where);
             $sql = str_replace('{where}', $data['where'], $sql);
+
         } else {
             $sql = str_replace('{where}', '', $sql);
         }

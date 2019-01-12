@@ -1,0 +1,130 @@
+/index.php
+/controller/script load fail.
+2019-01-12 10:57:10
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:51:49
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:52:19
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:52:24
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:52:30
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:52:34
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:53:48
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 11:54:18
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]28
+[class]WY\app\libs\Model
+2019-01-12 11:54:42
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]28
+[class]WY\app\libs\Model
+2019-01-12 11:55:01
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+select * from wy_acc where id not in ()
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]29
+[class]WY\app\libs\Model
+2019-01-12 11:57:09
+127.0.0.1
+
+/index.php
+error in E:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+select * from wy_acc where id not in (109,110,109,110,Array,Array,109,110)
+[file]E:\phpStudy\PHPTutorial\WWW\tianyan\app\controller\admfor035\group.php
+[line]25
+[class]WY\app\libs\Model
+2019-01-12 12:02:22
+127.0.0.1
+
+/index.php
+/controller/script load fail.
+2019-01-12 13:34:51
+127.0.0.1
+
+/index.php
+/controller/script load fail.
+2019-01-12 15:41:57
+127.0.0.1
+
+/index.php
+/controller/static load fail.
+2019-01-12 15:42:08
+127.0.0.1
+

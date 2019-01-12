@@ -11,10 +11,24 @@ class group extends CheckAdmin
     {
         //查询出用户与通道分组的关联
 
-        $groupList = $this->model()->select("a.group_id,a.group_name,b.id,b.username")->left('users b')->on('a.group_id = b.group_id')->join()->from('channelgroup a')->fetchAll();
-        $tongdao = $this->model()->select()->from('acc')->fetchAll();
-        $data = array('title' => '通道分组列表', 'lists' => $groupList, 'tongdao' => $tongdao);
+        $group = $this->model()->select("a.group_id,a.group_name,b.id,b.username")->left('users b')->on('a.group_id = b.group_id')->join()->from('channelgroup a')->fetchAll();
+        $groupList = $this->model()->select("channelid")->from('channelgroup')->fetchAll();
 
+        $channelListId = [];
+        if($groupList){
+            foreach ($groupList as $row){
+                $channelListId[] = $row["channelid"];
+            }
+            $channelStrId = implode($channelListId,",");
+
+            $sql = "select * from wy_acc where id not in (".$channelStrId.")";
+            $tongdao = $this->model()->queryAll($sql);
+        }else{
+            $tongdao = $this->model()->select()->from('acc')->fetchAll();
+        }
+
+
+        $data = array('title' => '通道分组列表', 'lists' => $group, 'tongdao' => $tongdao);
 
         $this->put('group.php', $data);
     }
@@ -50,6 +64,7 @@ class group extends CheckAdmin
     public function save(){
         $data = isset($_POST) ? $_POST : false;
         $data["channelid"] = implode($data["channelid"],',');
+        //dump($data["channelid"],1,1);
 
         if($this->model()->from('channelgroup')->insertData($data)->insert()){
             echo json_encode(array('status' => 1, 'msg' => '分组添加成功', 'url' => $this->dir . 'group'));
@@ -67,10 +82,18 @@ class group extends CheckAdmin
 
         $data = isset($_POST) ? $_POST : false;
 
+        foreach ($data["channelid"] as $row){
+            //$row
+            if($this->model()->select()->from('channelgroup')->where(array('fields' => 'group_id !=? and find_in_set('.$row.',channelid)', 'values' => array($id)))->fetchRow()){
+                echo json_encode(array('status' => 0, 'msg' => '该通道（'.$row.'）已在其他分组使用'));
+                exit;
+            }
+        }
+
         $data["channelid"] = implode($data["channelid"],',');
 
         if($this->model()->from('channelgroup')->updateSet($data)->where(array('fields' => 'group_id=?', 'values' => array($id)))->update()){
-            echo json_encode(array('status' => 1, 'msg' => '设置保存成功'));
+            echo json_encode(array('status' => 1, 'msg' => '设置保存成功','url' => $this->dir . 'group'));
             exit;
         }else{
             echo json_encode(array('status' => 0, 'msg' => '设置保存失败'));

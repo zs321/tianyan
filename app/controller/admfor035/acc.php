@@ -93,9 +93,19 @@ class acc extends CheckAdmin
             if ($is_check) {
                 $data = array('is_state' => $newData['is_state'], 'uprice' => $newData['uprice'], 'gprice' => $newData['gprice']);
                 $this->model()->from('userprice')->updateSet($data)->where(array('fields' => 'channelid=?', 'values' => array($id)))->update();
-                /*$users=$this->model()->select('id')->from('users')->fetchAll();if($users){foreach($users as $key=>$val){if(!$this->model()->from('userprice')->where(array('fields'=>'userid=? and channelid=?','values'=>array($val['id'],$id)))->count()){$insertData=array('is_state'=>$newData['is_state'],'uprice'=>$newData['uprice'],'gprice'=>$newData['gprice'],'userid'=>$val['id'],'channelid'=>$id,);$this->model()->from('userprice')->insertData($insertData)->insert();}}}*/
+                $users=$this->model()->select('id')->from('users')->fetchAll();
+                if($users){
+                    foreach($users as $key=>$val){
+                        if(!$this->model()->from('userprice')->where(array('fields'=>'userid=? and channelid=?','values'=>array($val['id'],$id)))->count()){
+                            $insertData=array('is_state'=>$newData['is_state'],'uprice'=>$newData['uprice'],'gprice'=>$newData['gprice'],'userid'=>$val['id'],'channelid'=>$id,);
+                            $this->model()->from('userprice')->insertData($insertData)->insert();
+                        }
+                    }
+                }
             }
-            echo json_encode(array('status' => 1, 'msg' => '设置保存成功', 'url' => $this->dir . 'acc'));
+
+            //, 'url' => $this->dir . 'acc'
+            echo json_encode(array('status' => 1, 'msg' => '设置保存成功'));
             exit;
         }
         echo json_encode(array('status' => 0, 'msg' => '设置保存失败'));

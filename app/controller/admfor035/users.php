@@ -161,15 +161,20 @@ class users extends CheckAdmin
                 $this->model()->from('userprice')->insertData($userprice)->insert();
             }
         }
-        $group = $this->model()->select('id')->from('users')->where(array('fields' => 'group_id=?', 'values' => array($newData["group_id"])))->fetchRow();
 
-        if($group){
-            echo json_encode(array('status' => 0, 'msg' => '此分组列表已被占用，请选择其他通道'));
-            exit;
-        }
+
+//        $group = $this->model()->select('id')->from('users')->where(array('fields' => 'group_id=?', 'values' => array($newData["group_id"])))->fetchRow();
+//
+//        if($group){
+//            echo json_encode(array('status' => 0, 'msg' => '此分组列表已被占用，请选择其他通道'));
+//            exit;
+//        }
+
+
+
 
         if ($this->model()->from('users')->updateSet($newData)->where(array('fields' => 'id=?', 'values' => array($id)))->update()) {
-            echo json_encode(array('status' => 1, 'msg' => '设置保存成功', $this->dir . 'users/edit/' . $id));
+            echo json_encode(array('status' => 1, 'msg' => '设置保存成功','url'=> $this->dir . 'users/edit/' . $id));
             exit;
         }
         echo json_encode(array('status' => 0, 'msg' => '设置保存失败'));

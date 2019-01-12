@@ -46,8 +46,8 @@ class register extends Controller
                 $orginData = array('sitename' => $this->config['sitename'], 'url' => 'http://' . $this->config['siteurl'] . '/register/complete?email=' . $email . '&token=' . $data['token']);
                 $newData = $this->res->replaceMailTpl($mailtpl, $orginData);
                 $subject = array('title' => $newData['title'], 'email' => $email, 'content' => $newData['content']);
-                $this->res->sendMail($subject, $this->config);
-                echo json_encode(array('status' => 1, 'msg' => '注册邮件已发送，请登录您的邮箱查看', 'url' => '/register'));
+                /*$this->res->sendMail($subject, $this->config);*/
+                echo json_encode(array('status' => 1, 'msg' => '正在拉起注册页面', 'url' => $orginData["url"]));
                 exit;
             }
         }
