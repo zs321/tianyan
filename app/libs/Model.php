@@ -127,6 +127,7 @@ class Model
                 $this->limits = 'LIMIT ' . $this->limit;
             }
         }
+
         $sql = "select " . $this->fields . " from " . $this->table . " " . $this->join . " {where} " . $this->groupby . "  " . $this->orderby . " " . $this->limits;
         return $sql;
     }
@@ -142,7 +143,7 @@ class Model
         return false;
     }
 
-    function toDubugSql()
+    function toDebugSql()
     {
         if (false !== $this->limit) {
             if (false !== $this->offset) {
@@ -163,7 +164,7 @@ class Model
             }
             $sql = implode($sqls,"");
         }
-        return $sql;
+        dump($sql,1,1);
     }
 
 
@@ -174,8 +175,6 @@ class Model
     {
         $sql = $this->toSql();
 
-	
-
         $data = array();
         if ($this->where) {
             $data = $this->db->parseWhere($this->where);
@@ -183,21 +182,19 @@ class Model
         } else {
             $sql = str_replace('{where}', '', $sql);
         }
+
         $stm = $this->db->prepare($sql);
         if ($data) {
             $this->db->bindValue($stm, $data['values']);
         }
-
-
-
-
-
         $this->db->execute($stm);
+
         if ($stm->rowCount()) {
             return $this->db->fetchAll($stm);
         }
         return false;
     }
+
 
 
 
@@ -243,6 +240,7 @@ class Model
             return false;
         }
         $result = $this->db->insert($this->table, $this->insertData);
+
         return $result;
     }
     function count()
@@ -269,10 +267,6 @@ class Model
         if (!$this->updateSet) {
             return false;
         }
-
-	
-
-
         $result = $this->db->update($this->table, $this->updateSet, $this->where);
         return $result;
     }

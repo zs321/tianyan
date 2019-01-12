@@ -4,7 +4,7 @@ namespace WY\app;
 class Config{
 	static function db(){
 		return array(
-			'server'=>'127.0.0.1',
+			'server'=>'192.168.0.104',
 			'port'=>'3306',
 			'user'=>'root',
 			'pass'=>'root',

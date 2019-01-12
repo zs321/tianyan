@@ -69,7 +69,6 @@ class users extends CheckAdmin
     }
 
 
-
     public function tongdao()
     {
         $id = isset($this->action[3]) ? intval($this->action[3]) : 0;
@@ -99,10 +98,6 @@ class users extends CheckAdmin
 
 
 		if ($id) {
-
-
-			
-
             if ($data = $this->model()->select('is_state')->from('userprice')->where(array('fields' => 'userid=? and id=?', 'values' => array($userid, $id)))->fetchRow()) {
 
 				
@@ -128,7 +123,10 @@ class users extends CheckAdmin
         $id = isset($this->action[3]) ? intval($this->action[3]) : 0;
         $user = $this->model()->select()->from('users')->where(array('fields' => 'id=?', 'values' => array($id)))->fetchRow();
         $userinfo = $this->model()->select()->from('userinfo')->where(array('fields' => 'userid=?', 'values' => array($id)))->fetchRow();
-        $data = array('user' => $user, 'userinfo' => $userinfo);
+
+        $groupList = $this->model()->select()->from('channelgroup')->fetchAll();
+//        dump($groupList);die();
+        $data = array('user' => $user, 'userinfo' => $userinfo,"grouplist"=>$groupList);
         $this->put('usersedit.php', $data);
     }
     public function editsave()
@@ -163,6 +161,13 @@ class users extends CheckAdmin
                 $this->model()->from('userprice')->insertData($userprice)->insert();
             }
         }
+        $group = $this->model()->select('id')->from('users')->where(array('fields' => 'group_id=?', 'values' => array($newData["group_id"])))->fetchRow();
+
+        if($group){
+            echo json_encode(array('status' => 0, 'msg' => '此分组列表已被占用，请选择其他通道'));
+            exit;
+        }
+
         if ($this->model()->from('users')->updateSet($newData)->where(array('fields' => 'id=?', 'values' => array($id)))->update()) {
             echo json_encode(array('status' => 1, 'msg' => '设置保存成功', $this->dir . 'users/edit/' . $id));
             exit;

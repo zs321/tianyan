@@ -61,6 +61,22 @@
                         </select>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">
+                        通道分组列表：
+                    </label>
+                    <div class="col-md-4">
+                        <select name="group_id" class="form-control">
+                            <?php
+                                foreach($grouplist as $row){
+                                    echo "<option value='".$row["group_id"]."'>".$row["group_name"]."（".$row['group_id']."）"."</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <label class="col-md-2 control-label">
                         开通提现：

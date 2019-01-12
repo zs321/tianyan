@@ -125,6 +125,7 @@ class Db
         }
         $result = $this->parseQues($data);
         $sql = "INSERT INTO " . $table . " (" . implode(',', $result['fields']) . ") VALUES(" . implode(',', $result['ques']) . ")";
+        //dump($sql,1,1);
         $stm = $this->prepare($sql);
         $this->bindValue($stm, $result['values']);
         $this->execute($stm);

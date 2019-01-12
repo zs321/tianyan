@@ -10,7 +10,8 @@
     </h3>
     <br>
 
-<!--    <div class="set set0">-->
+    <div class="set set0">
+<!--        -->
 <!--        <div class="panel panel-default">-->
 <!--            <div class="panel-body">-->
 <!--                <div class="btn-group">-->
@@ -55,28 +56,41 @@
                 </tr>
                 </thead>
                 <tbody>
+
+
                 <?php if($lists):?>
                     <?php foreach($lists as $key=>$val):?>
-                        <tr data-id="<?php echo $val['id']?>">
+                        <tr data-id="<?php echo $val['group_id']?>">
                             <td>
-                                <?php echo $val['id']?>
+                                <?php echo $val['group_id']?>
                             </td>
                             <td>
-                                <span class="<?php echo $val['is_display'] ? 'red' : 'green'?>">
-                                    <?php echo $val['name']?>
-                                </span>
+                                <?php echo $val['group_name']?>
                             </td>
                             <td>
-                                <?php echo $val['acpcode']?>
+                                <?php
+                                    if($val["id"]){
+                                        ?>
+                                        <span class="green">
+                                            <?php echo $val['username']."(".$val['id'].")"?>
+                                        </span>
+                                        <?php
+                                    }else{
+                                        ?>
+                                        <span class="red">此通道分组暂未指定用户被使用</span>
+                                        <?php
+                                    }
+                                ?>
+
                             </td>
                             <td>
-                                <a href="<?php echo $this->dir?>acc/edit/<?php echo $val['id']?>" data-toggle="tooltip"
+                                <a href="<?php echo $this->dir?>group/edit/<?php echo $val['group_id']?>" data-toggle="tooltip"
                                    title="编辑">
                                     <span class="glyphicon glyphicon-edit">
                                     </span>
                                 </a>
                                 &nbsp;
-                                <a href="javascript:;" onclick="del(<?php echo $val['id']?>,'<?php echo $this->dir?>acc/del')"
+                                <a href="javascript:;" onclick="del(<?php echo $val['group_id']?>,'<?php echo $this->dir?>group/del')"
                                    data-toggle="tooltip" title="删除">
                                     <span class="glyphicon glyphicon-trash">
                                     </span>
@@ -99,110 +113,28 @@
         .form-group>span.col-md-4{font-size:0.9em;color:#6B6D6E;line-height: 30px}
     </style>
     <div class="set set1 hide">
-        <form class="form-ajax form-horizontal" action="<?php echo $this->dir?>acc/save"
+        <form class="form-ajax form-horizontal" action="<?php echo $this->dir?>group/save"
               method="post">
             <div class="form-group">
                 <label for="name" class="col-md-2 control-label">
-                    接入商：
+                    通道分组名称：
                 </label>
                 <div class="col-md-4">
-                    <select name="acpcode" class="form-control">
-                        <option value="">
-                            请选择接入商
-                        </option>
-                        <?php foreach($acp as $key=>
-                                      $val):?>
-                            <option value="<?php echo $val['code']?>">
-                                <?php echo $val['name']?>
-                            </option>
-                        <?php endforeach;?>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group gateway hide">
-                <label for="name" class="col-md-2 control-label">
-                    选择网关：
-                </label>
-                <div class="col-md-4">
-                    <select name="gateway" class="form-control">
-                    </select>
+                    <input type="text" name="group_name" class="form-control" required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="name" class="col-md-2 control-label">
-                    通道名称：
-                </label>
+                <label  for="channelid[]" class="col-md-2 control-label">通道列表</label>
                 <div class="col-md-4">
-                    <input type="text" name="name" class="form-control" required>
+                    <?php
+                    foreach ($tongdao as $row){
+                        echo "<input type='checkbox' name='channelid[]' value='".$row['id']."'>".$row["name"]."&emsp;";
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="wprice" class="col-md-2 control-label">
-                    平台分成：
-                </label>
-                <div class="col-md-4">
-                    <input type="text" name="wprice" class="form-control" placeholder="0.98"
-                           maxlength="6" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="gprice" class="col-md-2 control-label">
-                    代理分成：
-                </label>
-                <div class="col-md-4">
-                    <input type="text" name="gprice" class="form-control" placeholder="0.97"
-                           maxlength="6" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="uprice" class="col-md-2 control-label">
-                    用户分成：
-                </label>
-                <div class="col-md-4">
-                    <input type="text" name="uprice" class="form-control" placeholder="0.96"
-                           maxlength="6" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="sortid" class="col-md-2 control-label">
-                    排序：
-                </label>
-                <div class="col-md-4">
-                    <input type="text" name="sortid" class="form-control" value="0" maxlength="6">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">
-                    设置状态：
-                </label>
-                <div class="col-md-4">
-                    <select name="is_state" class="form-control">
-                        <option value="0">
-                            正式开通
-                        </option>
-                        <option value="1">
-                            暂不开通
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">
-                    默认使用：
-                </label>
-                <div class="col-md-4">
-                    <select name="is_display" class="form-control">
-                        <option value="0">
-                            是
-                        </option>
-                        <option value="1">
-                            否
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <!--<div class="form-group"><label class="col-md-2 control-label"></label><div class="col-md-4"><label><input type="checkbox" name="is_check" value="1" checked>&nbsp;为所有用户更新此通道</label></div></div>-->
-            <div class="form-group">
+
+            <div class="form-group ">
                 <div class="col-md-offset-2 col-md-4">
                     <button type="submit" class="btn btn-success">
                         &nbsp;

@@ -51,7 +51,7 @@ class CheckAdmin extends Controller
     }
     public function menu()
     {
-        return array('用户管理' => array('users' => '用户列表', 'usercfo' => '代收款登记', 'userlogs' => '登录日志', 'usership' => '用户结算', 'userpay' => '付款记录'), '订单管理' => array('orders' => '订单列表', 'ordersua' => '商户统计', 'ordersca' => '通道统计', 'ordersha' => '代理统计'), '代理管理' => array('agent' => '代理列表', 'agentlogs' => '登录日志', 'agentship' => '代理结算', 'agentpay' => '付款记录'), '通道管理' => array('acp' => '接入信息', 'acl' => '接入网关', 'acc' => '通道列表', 'acw' => '通用网关', 'acb' => '网银列表'), '文章管理' => array('arcate' => '文章分类', 'arlist' => '文章列表'), '系统管理' => array('admins' => '管理员列表', 'pwd' => '修改密码', 'logs' => '登录日志', 'set' => '系统设置', 'cog' => '导航设置', 'mailtpl' => '邮件模板', 'ordernotify' => '通知记录', 'bd' => '补发订单'));
+        return array('用户管理' => array('users' => '用户列表', 'usercfo' => '代收款登记', 'userlogs' => '登录日志', 'usership' => '用户结算', 'userpay' => '付款记录'), '订单管理' => array('orders' => '订单列表', 'ordersua' => '商户统计', 'ordersca' => '通道统计', 'ordersha' => '代理统计'), '代理管理' => array('agent' => '代理列表', 'agentlogs' => '登录日志', 'agentship' => '代理结算', 'agentpay' => '付款记录'), '通道管理' => array('acp' => '接入信息', 'acl' => '接入网关', 'acc' => '通道列表', 'group' => '通道分组列表', 'acw' => '通用网关', 'acb' => '网银列表'), '文章管理' => array('arcate' => '文章分类', 'arlist' => '文章列表'), '系统管理' => array('admins' => '管理员列表', 'pwd' => '修改密码', 'logs' => '登录日志', 'set' => '系统设置', 'cog' => '导航设置', 'mailtpl' => '邮件模板', 'ordernotify' => '通知记录', 'bd' => '补发订单'));
     }
     public function getSubMenu($menu, $cur = '')
     {
