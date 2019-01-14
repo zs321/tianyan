@@ -9,13 +9,13 @@ require_once 'inc.php';
 
 
 
-$dt = "1547435158";  //支付时间
-$mark = '12'; // ordermodel.BillNO;备注
-$money = '￥1.96';  //支付金额
-$no = '20181217200040011100580038909049';  //支付宝订单号
-$type = 'alipay'; //支付方式 alipay
-$account = '2897483365@qq.com'; //支付宝账号
-$sign = 'ce36a2121dab284e92fcb8a9bbd3a6d0'; //md5
+//$dt = "1547435158";  //支付时间
+//$mark = '12'; // ordermodel.BillNO;备注
+//$money = '￥1.96';  //支付金额
+//$no = '20181217200040011100580038909049';  //支付宝订单号
+//$type = 'alipay'; //支付方式 alipay
+//$account = '2897483365@qq.com'; //支付宝账号
+//$sign = 'ce36a2121dab284e92fcb8a9bbd3a6d0'; //md5
 
 /*// $arr0 = array (
   // 'key' => '123456',
@@ -28,61 +28,41 @@ $sign = 'ce36a2121dab284e92fcb8a9bbd3a6d0'; //md5
 //url = model3.GateUrl.Replace("Api/pay/set.html", "Api/Client/aliApi") + "?key=123456&money=" +
 //    money.Replace("￥", "") + "&t=" + DateTime.Now.AddSeconds(5).ToString("yyyy-MM-dd HH:mm:ss") + "&b=" + mark +
 //    "&o=" + no + "&zfb=" + account;
+$dt = $_REQUEST['dt'];  //支付时间
+$mark = $_REQUEST['mark']; // ordermodel.BillNO;备注
+$money = $_REQUEST['money'];  //支付金额
+$no = $_REQUEST['no'];  //支付宝订单号
+$type = $_REQUEST['type']; //支付方式 alipay
+$account = $_REQUEST['account']; //支付宝账号
+$sign = $_REQUEST['sign']; //md5
 //此处需要存储收款助手发送过来的数据      防止收款助手重复发送数据引起重复请求
 
-//$Payacp = new \WY\app\model\Payacp();
-//if($Payacp->mobileData($no)){
-//    echo 'SUCCESS';
-//    exit;
-//}
-//$mobile['no'] = $no;
-//$mobile['dt'] = $dt;
-//$mobile['mark'] = $mark;
-//$mobile['money'] = str_replace("￥","",$money);
-//$mobile['type'] = $type;
-//$mobile['account'] = $account;
-//$mobile['sign'] = $sign;
-//$Payacp->MobileDataAdd($mobile);
-//if((substr($mark,0,1) == 'G' && substr($mark,-1,1) == 'G' && strlen($mark) <= 12) || strlen($mark) <= 10){
-//    $url = "ai.1899pay.com/Api/Client/aliApi";
-//    $get_data['key'] = '123456';
-//    $get_data['money'] = str_replace("￥","",$money);
-//    $get_data['t'] = date("Y-m-d%20H:i:s");
-//    $get_data['b'] = $mark;
-//    $get_data['o'] = $no;
-//    $get_data['zfb'] = $account;
-//    $res = httpGet($url,$get_data);
-//    dump($res,1);
-//}
-
-
-
-
-
-
-
-
-
-
-function checkNum($number)
-{
-    if($number>1)
-    {
-        throw new Exception("Value must be 1 or below");
-    }
-    return true;
+$Payacp = new \WY\app\model\Payacp();
+if($Payacp->mobileData($no)){
+    echo 'SUCCESS';
+    exit;
+}
+$mobile['no'] = $no;
+$mobile['dt'] = $dt;
+$mobile['mark'] = $mark;
+$mobile['money'] = str_replace("￥","",$money);
+$mobile['type'] = $type;
+$mobile['account'] = $account;
+$mobile['sign'] = $sign;
+$Payacp->MobileDataAdd($mobile);
+if((substr($mark,0,1) == 'G' && substr($mark,-1,1) == 'G' && strlen($mark) <= 12) || strlen($mark) <= 10){
+    $url = "ai.1899pay.com/Api/Client/aliApi";
+    $get_data['key'] = '123456';
+    $get_data['money'] = str_replace("￥","",$money);
+    $get_data['t'] = date("Y-m-d%20H:i:s");
+    $get_data['b'] = $mark;
+    $get_data['o'] = $no;
+    $get_data['zfb'] = $account;
+    $res = httpGet($url,$get_data);
+    dump($res,1);
 }
 
-//在 "try" 代码块中触发异常
-try
-{
-    if(2>1)  throw new Exception("Value must be 1 or below1231");
-}
-//捕获异常
-catch(Exception $e)
-{
-    echo 'Message: ' .$e->getMessage();
-}
+
 
 
 
