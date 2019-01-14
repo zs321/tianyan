@@ -196,7 +196,7 @@ class apisubmit extends api
             exit;
         }
         if($total_fee<0){
-            echo '请求金额必须大于1元';exit;
+            echo '请求金额必须大于0元';exit;
         }
         if(($total_fee>3000 && $paytype=='alipay') || ($total_fee>3000 && $paytype=='alipaywap')) {
             echo '支付宝单笔支付限额3000元!';exit;

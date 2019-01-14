@@ -26,6 +26,7 @@ class Handleorder extends Model
         if (!$orders || $orders['is_state'] > 0) {
             return false;
         }
+
         $rate = $this->getPrice($orders['userid'], $orders['channelid']);
 
         $data = array('realmoney' => $this->money, 'uprice' => $rate['uprice'], 'gprice' => $rate['gprice'], 'wprice' => $rate['wprice'], 'is_state' => 1, 'lastime' => time());

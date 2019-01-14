@@ -1,13 +1,10 @@
 ﻿<?php
 require_once 'inc.php';
 
-
 $submit['ali_account'] = $email;  //账号
 $submit['attach'] = $_REQUEST['remark'];
 $submit['body'] = '购买商品-在线支付';
-
 $submit['net_gate_url'] = $nate_gate_url;  //后台添加
-
 $submit['notice_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/notify.php';  //支付完成之后的异步回调地址
 $submit['out_trade_no'] = $_REQUEST['orderid'];
 $submit['return_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/pay/guma/return.php'; //暂时没啥用
@@ -16,14 +13,54 @@ $submit['trade_type'] = $_REQUEST['trade_type'];   //从demo程序传过来的
 $submit['sign'] = createSign($submit);
 
 $url = "http://ai.1899pay.com/index.php/Api/Pay/set/";
+
+$redis = new Redis();
+$redis->connect("127.0.0.1",6379);
 $data = Post($url,$submit);
-$data = json_decode($data,true);
-echo microtime();
-dump($data,1,1);
-//$data["pay_url"] = "http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00";
-isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;
-isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
+
+//$data = json_decode($data,true);
+
+$data = array (
+    'return_code' => 'SUCCESS',
+    'return_msg' => '',
+    'trade_type' => 'ALIPAYPC',
+    'out_trade_no' => '2019011414124814227',
+    'attach' => '',
+    'pay_url' => 'https://qr.alipay.com/fkx002078grhvhqhiatd1e7?t=1544695479236',
+    'result_code' => 'SUCCESS',
+    'err_code' => '',
+    'err_code_des' => '',
+    'sign' => '097CA4C6B066D115E60FDBAA2C64F92D',
+    'bendi' => '1',
+);
+//支付宝都是pay_url  微信是code_url
+if($data["bendi"] == 6){
+    //吱口令  加载吱口令的页面
+    isset($data["kouling"])?$kouLing = $data["kouling"]:$kouLing = false;
+    echo $kouLing;
+    die();
+}else if($data["bendi"] == 1){
+    //本地固码与自动存为固码的数据
+    isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;
+    $redis->set($submit['out_trade_no'],$payUrl);
+}else if($data["bendi"] == 2){
+    //自动码
+    isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;
+    $redis->set($submit['out_trade_no'],$payUrl);
+}else if($data["bendi"] == 3){
+    //账号状态离线
+    echo $data["return_msg"];
+    die();
+}else if($data["bendi"] == 4){
+    //通道终端异常
+    echo $data["return_msg"];
+    die();
+}
+$payUrl = "http://".$_SERVER['SERVER_NAME']."/pay/guma/content.php?orderid=".$submit['out_trade_no'];
+
 ?>
+
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -39,7 +76,7 @@ isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
     <script type="text/javascript">
         var timer;
         var autoRedirectCount = 3;
-        var payurl = 'alipays://platformapi/startapp?appId=20000067&backBehavior=pop&url=http%3a%2f%2fapi.abcapi.cn%2fServices%2ftzzfb%2fWebForm2.aspx%3fparm%3d2088331522142414%2ck190112141270000%2c1.00';
+        var payurl = "<?php echo $payUrl; ?>";
         var uaa = navigator.userAgent;
         var isiOS = !!uaa.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
         $(function () {
@@ -92,7 +129,7 @@ isset($data["kouling"])?$kouling = $data["kouling"]: $kouling = false;
         <div class="ts"><span>1</span>请截屏先保存二维码到手机</div>
         <div class="ts"><span>2</span>打开<label id="payType">支付宝</label>，扫一扫本地图片。</div>
     </div>
-    <script>GetQrCode("<?php echo $payUrl; ?>", 'alipay');</script>
+    <script>GetQrCode(payurl, 'alipay');</script>
 </form>
 </body>
 </html>
