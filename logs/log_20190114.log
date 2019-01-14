@@ -1,0 +1,415 @@
+/index.php
+/controller/script load fail.
+2019-01-14 09:57:45
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:43:39
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:43:51
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:43:59
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:44:12
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:45:00
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:45:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:46:02
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:47:33
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:48:34
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mark' in 'field list'
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:49:09
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1364 Field 'md_id' doesn't have a default value
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:53:51
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:54:34
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:54:51
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:55:17
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:55:49
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:56:17
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:18
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:19
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:58:47
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:25
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:25
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:26
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:27
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:27
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:27
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:27
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]263
+[class]WY\app\libs\Db
+2019-01-14 14:59:27
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]264
+[class]WY\app\libs\Db
+2019-01-14 15:01:43
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]264
+[class]WY\app\libs\Db
+2019-01-14 15:08:54
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96...' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money,type,account,sign) VALUES(?,?,?,?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]264
+[class]WY\app\libs\Db
+2019-01-14 15:10:40
+127.0.0.1
+
+/pay/guma/mobilePayNotify.php
+error in D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Db.php 80
+SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xA3\xA41.96' for column 'money' at row 1
+INSERT INTO wy_mobile (no,dt,mark,money) VALUES(?,?,?,?)
+[file]D:\phpStudy\PHPTutorial\WWW\tianyan\app\libs\Model.php
+[line]264
+[class]WY\app\libs\Db
+2019-01-14 15:11:35
+127.0.0.1
+

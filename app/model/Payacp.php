@@ -21,5 +21,24 @@ class Payacp extends Controller
 //        dump($banklist,'',1);
         return $banklist;
     }
+
+    public function MobileData($no)
+    {
+        $md_id = $this->model('no')->select()->from('mobile')->where(array('fields' => 'no=?', 'values' => array($no)))->fetchRow();
+        return $md_id;
+    }
+
+    public function MobileDataAdd($data)
+    {
+        $md_id = $this->model()->from('mobile')->insertData($data)->insert();
+        return $md_id;
+    }
+
+
+
+
+
+
+
 }
 ?>

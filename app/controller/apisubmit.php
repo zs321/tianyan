@@ -195,7 +195,7 @@ class apisubmit extends api
             echo $this->ret->put('209', $cardnum ? true : false);
             exit;
         }
-        if($total_fee<1){
+        if($total_fee<0){
             echo '请求金额必须大于1元';exit;
         }
         if(($total_fee>3000 && $paytype=='alipay') || ($total_fee>3000 && $paytype=='alipaywap')) {

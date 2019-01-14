@@ -1,16 +1,6 @@
 ﻿<?php
 require_once 'inc.php';
-function Post($url,$post_data){
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_HEADER, 0);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
-    $data = curl_exec($curl);
-    curl_close($curl);
-    return $data;
-}
+
 
 $submit['ali_account'] = $email;  //账号
 $submit['attach'] = $_REQUEST['remark'];
@@ -28,6 +18,7 @@ $submit['sign'] = createSign($submit);
 $url = "http://ai.1899pay.com/index.php/Api/Pay/set/";
 $data = Post($url,$submit);
 $data = json_decode($data,true);
+echo microtime();
 dump($data,1,1);
 //$data["pay_url"] = "http://api.abcapi.cn/Services/tzzfb/WebForm3.aspx?parm=2088331522142414,k190112141270000,1.00";
 isset($data["pay_url"])?$payUrl = $data["pay_url"]:$payUrl = false;

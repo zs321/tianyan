@@ -143,6 +143,36 @@ function qrCode($data="",$title=""){
     return ltrim($file_path,".");
 }
 
+function Post($url,$post_data){
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_HEADER, 0);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_POST, 1);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+    $data = curl_exec($curl);
+    curl_close($curl);
+    return $data;
+}
+
+function httpGet($url,$get_data){
+    foreach ($get_data as $k => $v) {
+        $data[] = $k.'='.$v;
+    }
+    $p_str = implode('&', $data);
+    $url .= '?'.$p_str;
+//    dump($url,1,1);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+//    curl_setopt($ch, CURLOPT_HEADER, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    $output = curl_exec($ch);
+    curl_close($ch);
+
+    return $output;
+}
+
 
 
 ?>

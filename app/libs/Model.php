@@ -260,6 +260,7 @@ class Model
         if (!$this->insertData) {
             return false;
         }
+
         $result = $this->db->insert($this->table, $this->insertData);
 
         return $result;

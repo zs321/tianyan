@@ -27,9 +27,11 @@ class Handleorder extends Model
             return false;
         }
         $rate = $this->getPrice($orders['userid'], $orders['channelid']);
+
         $data = array('realmoney' => $this->money, 'uprice' => $rate['uprice'], 'gprice' => $rate['gprice'], 'wprice' => $rate['wprice'], 'is_state' => 1, 'lastime' => time());
-		
-        $this->model()->from('orders')->updateSet($data)->where(array('fields' => 'orderid=?', 'values' => array($this->orderid)))->update();
+
+         $this->model()->from('orders')->updateSet($data)->where(array('fields' => 'orderid=?', 'values' => array($this->orderid)))->update();
+
         $push = new Pushorder($this->orderid);
         $push->notify();
     }

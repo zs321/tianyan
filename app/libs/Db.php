@@ -128,6 +128,7 @@ class Db
         //dump($sql,1,1);
         $stm = $this->prepare($sql);
         $this->bindValue($stm, $result['values']);
+                //dump($result['values'],1,1);
         $this->execute($stm);
         return $this->db->lastInsertId();
     }
